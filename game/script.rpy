@@ -26,8 +26,11 @@ label start:
 
 label finish:
 
-    l "this is the finish scene"
+show bg page_intro
+
+l "this is the finish scene"
 
 
 # This ends the game.
-    return
+
+return

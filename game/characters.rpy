@@ -21,8 +21,26 @@ image noiseSignale2 = "noise_signifier_2.png"
 
 image deanna_sleepForest:
     "deannaSleep"
-    
 
+
+image deanna forest blinks:
+    "deanna_sleep.png"
+    pause 0.2
+    "deanna_eyes_opening.png"
+    pause 0.2
+    repeat
+        
+
+#image diana fly:
+#   "dianaFlap.png"
+#   pause 0.4
+#    "dianaBlink.png" with Dissolve(0.3)
+#    #pause 0.4
+#    "dianaFlap.png" with Dissolve(0.3)
+#    pause 0.4
+#    "dianaBlink.png" with Dissolve(0.3)
+#    pause 0.4
+#    repeat
 
 #define transforms (position) and other image attributes here
 

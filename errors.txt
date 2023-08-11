@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 39: expected ':' not found.
-    label finish
-                ^
+File "game/script.rpy", line 36: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    return
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Aug 11 14:03:23 2023
+Fri Aug 11 18:55:00 2023
