@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 16, in script call
+    call introScene.rpy
+  File "game/script.rpy", line 16, in script call
+    call introScene.rpy
+ScriptError: could not find label 'introScene.rpy'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 16, in script call
+    call introScene.rpy
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1725, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 16, in script call
+    call introScene.rpy
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'introScene.rpy'.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+RachaBardDemo 1.0
+Fri Aug 11 14:04:54 2023
