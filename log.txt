@@ -1,4 +1,4 @@
-Fri Aug 11 19:03:31 2023
+Sat Aug 12 16:52:57 2023
 Windows-10-10.0.19045
 Ren'Py 8.1.1.23060707
  
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init. took 0.03s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
-Loading script. took 0.11s
+Loading script. took 0.12s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.03s
@@ -25,7 +25,7 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 36: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    return
-    ^
+File "game/deannaWorried.rpy", line 9: end of line expected.
+    show d_worried at deanna_worried left
+                                     ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Aug 11 18:55:00 2023
+Sat Aug 12 16:41:03 2023

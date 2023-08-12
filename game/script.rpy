@@ -22,13 +22,9 @@ label start:
 
     # These display lines of dialogue.
 
-    jump finish
-
 label finish:
 
-show bg page_intro
-
-l "this is the finish scene"
+l "This is as far as you have gotten through the slideshow!"
 
 
 # This ends the game.
