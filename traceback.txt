@@ -1,60 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/characters.rpy:64
-  File "game/script.rpy", line 16, in script call
-    call introScene
-  File "game/introScene.rpy", line 27, in script call
-    call deannaAlertWakeup
-  File "game/deannaAlertWakeup.rpy", line 22, in script call
-    call worried_deanna
-  File "game/deannaWorried.rpy", line 9, in script
-    show d_worried at deanna_worried_left
-  File "game/characters.rpy", line 64, in <module>
-    andchor(0.5, 0.5)
-NameError: name 'andchor' is not defined
+While running game code:
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 529, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 529, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 16, in script call
-    call introScene
-  File "game/introScene.rpy", line 27, in script call
-    call deannaAlertWakeup
-  File "game/deannaAlertWakeup.rpy", line 22, in script call
-    call worried_deanna
-  File "game/deannaWorried.rpy", line 9, in script
-    show d_worried at deanna_worried_left
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 759, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 1277, in add
-    thing.visit_all(lambda d : None)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 671, in visit_all
-    for d in self.visit():
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 669, in visit
-    block = self.compile()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 573, in compile
-    block = self.atl.compile(self.context)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 788, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 788, in <listcomp>
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 1099, in compile
-    child = ctx.eval(expr)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 277, in eval
-    return renpy.python.py_eval(expr, locals=self.context)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/characters.rpy", line 64, in <module>
-    andchor(0.5, 0.5)
-NameError: name 'andchor' is not defined
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 529, in script
+    python hide:
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 529, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loadsave.py", line 813, in load
+    log.unfreeze(roots, label="_after_load")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\rollback.py", line 1108, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\rollback.py", line 908, in rollback
+    self.load_failed()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\rollback.py", line 826, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Sat Aug 12 16:42:27 2023
+Mon Aug 14 15:01:23 2023
