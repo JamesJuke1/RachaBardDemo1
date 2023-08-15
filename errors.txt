@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/deannaWorried.rpy", line 9: end of line expected.
-    show d_worried at deanna_worried left
-                                     ^
+File "game/introScene.rpy", line 5: is not terminated with a newline. (Check strings and parenthesis.)
+        $flash = Fade(.25, 0, .75, color=
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sat Aug 12 16:41:03 2023
+Tue Aug 15 17:07:28 2023

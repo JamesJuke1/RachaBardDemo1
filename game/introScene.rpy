@@ -1,6 +1,12 @@
 #dialog and images for the intro scene for the demo.
 label introScene:
-show bg page_intro with blinds 
+
+init:
+    $flash = Fade(.5, 0, .75, color="#fff")
+
+
+
+show bg page_intro with flash 
 #beginning scene the show forest tree tops then
 #scrolls to show Deanna asleep near a crashed wagon
 
