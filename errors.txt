@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/introScene.rpy", line 5: is not terminated with a newline. (Check strings and parenthesis.)
-        $flash = Fade(.25, 0, .75, color=
+File "game/gui.rpy", line 135: expected statement.
+    .
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Tue Aug 15 17:07:28 2023
+Tue Aug 15 19:58:07 2023

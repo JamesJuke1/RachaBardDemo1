@@ -1,42 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 529, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 529, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/gui.rpy", line 123, in script
+    define gui.namebox_borders = Borders(.1)
+  File "game/gui.rpy", line 123, in <module>
+    define gui.namebox_borders = Borders(.1)
+TypeError: __init__() missing 3 required positional arguments: 'top', 'right', and 'bottom'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 529, in script
-    python hide:
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 529, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loadsave.py", line 813, in load
-    log.unfreeze(roots, label="_after_load")
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\rollback.py", line 1108, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\rollback.py", line 908, in rollback
-    self.load_failed()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\rollback.py", line 826, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/gui.rpy", line 123, in script
+    define gui.namebox_borders = Borders(.1)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2508, in execute
+    self.set()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2522, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/gui.rpy", line 123, in <module>
+    define gui.namebox_borders = Borders(.1)
+TypeError: __init__() missing 3 required positional arguments: 'top', 'right', and 'bottom'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Mon Aug 14 15:01:23 2023
+Tue Aug 15 19:21:37 2023

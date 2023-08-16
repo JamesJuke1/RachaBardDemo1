@@ -4,7 +4,7 @@
 #character definition for the text box here.
 define e = Character("Eileen")
 define d = Character("Deanna", color="#00C7B6")
-define n = Character("Narrator")
+define n = Character("")
 define l = Character("Lethabo", color="#AD1400")
 define a = Character("Athos", color="#4D802E")
 
