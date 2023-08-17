@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 135: expected statement.
-    .
-    ^
+File "game/timer_screen.rpy", line 19: expected statement.
+    vbox:
+        ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Tue Aug 15 19:58:07 2023
+Wed Aug 16 19:47:51 2023

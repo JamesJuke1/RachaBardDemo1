@@ -4,9 +4,7 @@
 
 label worried_deanna:
 
-show bg page_3
-
-show d_worried at deanna_worried_left
+show bg page_3 with dissolve
 
 show nosie_flasher at nosie_flasherRight
 

@@ -37,6 +37,21 @@ image nosie_flasher:
     pause 0.1
     repeat 
 
+# image deanna_wakes_up:
+#    "deanna_sleep.png"
+#    pause 0.3
+#    "deanna_eyes_opening.png"
+#    pause 0.3
+#    "deanna_sleep.png"
+#    pause 0.3
+#   "deanna_eyes_opening.png"
+#n "Deanna finally awoke"
+#    pause 0.3
+#n "She immediately realized something amiss"
+#    pause 0.3
+#    "deanna_awake.png"
+#    pause 0.5
+#    "deanna_calling_out.png"
 
 #image diana fly: //this is an example for making an animation
 #   "dianaFlap.png"
@@ -53,7 +68,7 @@ image nosie_flasher:
 
 transform deanna_forestTransform:
     anchor (0.5, 0.5) #to place the center point of the image in the center vs the top left corner
-    pos(960, 780)
+    pos(750, 700)
     zoom 0.45
 
 transform nosie_flasherRight:
@@ -62,5 +77,6 @@ transform nosie_flasherRight:
 
 transform deanna_worried_left:
     anchor(0.5, 0.5)
-    pos(400, 900)
+    pos(500, 800)
     zoom 2
+

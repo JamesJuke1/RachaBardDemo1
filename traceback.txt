@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gui.rpy", line 123, in script
-    define gui.namebox_borders = Borders(.1)
-  File "game/gui.rpy", line 123, in <module>
-    define gui.namebox_borders = Borders(.1)
-TypeError: __init__() missing 3 required positional arguments: 'top', 'right', and 'bottom'
+  File "game/script.rpy", line 16, in script call
+    call introScene
+  File "game/introScene.rpy", line 19, in script
+    add "Time on Screen: [time_display]"  # Display time on screen
+Exception: Sayer 'add' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/gui.rpy", line 123, in script
-    define gui.namebox_borders = Borders(.1)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2508, in execute
-    self.set()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2522, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 123, in <module>
-    define gui.namebox_borders = Borders(.1)
-TypeError: __init__() missing 3 required positional arguments: 'top', 'right', and 'bottom'
+  File "game/script.rpy", line 16, in script call
+    call introScene
+  File "game/introScene.rpy", line 19, in script
+    add "Time on Screen: [time_display]"  # Display time on screen
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'add' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Tue Aug 15 19:21:37 2023
+Wed Aug 16 19:39:55 2023
