@@ -7,5 +7,6 @@ label worried_deanna:
 show bg page_3 with dissolve
 
 show nosie_flasher at nosie_flasherRight
+pause 3.0
 
-jump finish
+call scary_noise

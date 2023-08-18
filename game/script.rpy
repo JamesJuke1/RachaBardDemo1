@@ -12,8 +12,7 @@ label start:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-
-    call introScene
+    call dummy_intro
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -22,11 +21,3 @@ label start:
 
     # These display lines of dialogue.
 
-label finish:
-
-l "This is as far as you have gotten through the slideshow!"
-
-
-# This ends the game.
-
-return

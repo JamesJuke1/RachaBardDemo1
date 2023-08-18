@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/timer_screen.rpy", line 19: expected statement.
-    vbox:
-        ^
+File "game/gui.rpy", line 110: unexpected EOF while parsing
+    .
+     ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Aug 16 19:47:51 2023
+Thu Aug 17 19:12:04 2023

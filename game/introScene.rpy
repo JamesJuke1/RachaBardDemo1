@@ -21,13 +21,9 @@ show bg intro_scroll_down with pushup
 n "The air, perfumed with rich earth and tropical flowers,"
 
 n "suppressed the forest floor with heavy humidity."
-
+hide textbox
 show bg intro_scroll_down
 
 hide deanna forest blinks with dissolve
 
 call deannaAlertWakeup
-
-#return to the script.rpy to end the game.
-
-jump finish
