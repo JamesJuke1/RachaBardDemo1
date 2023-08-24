@@ -1,9 +1,14 @@
 #define characters and the animations that they will/may use here
 
+init:
+    $flash = Fade(.5, 0, .75, color="#fff")
+    $flashDelay = Fade(.1, 0,  .1, color="#000")
+    $speedFlash = Fade(.01, .01, .01, color="#fff")
+
 
 #character definition for the text box here.
 define d = Character("Deanna", color="#00C7B6")
-define n = Character("")
+define n = Character("  ",)
 define l = Character("Lethabo", color="#AD1400")
 define a = Character("Athos", color="#4D802E")
 
@@ -21,19 +26,23 @@ image noiseSignale2 = "noise_signifier_2.png"
 image deanna_sleepForest:
     "deannaSleep"
 
-
+#these need to be fixed and more inline with the powerpoint
 image deanna forest blinks:
     "deanna_sleep.png"
-    pause 0.2
+    pause 0.5
     "deanna_eyes_opening.png"
-    pause 0.2
+    pause 1.0
+    "deanna_sleep.png"
+    pause .75
+    "deanna_eyes_opening.png"
+    pause 0.5
     repeat
         
 image nosie_flasher:
     "noise_signifier1.png"  
-    pause 0.1
+    pause 0.25
     "noise_signifier2.png" 
-    pause 0.1
+    pause 0.25
     repeat 
 
 # image deanna_wakes_up:
@@ -65,17 +74,24 @@ image nosie_flasher:
 
 #define transforms (position) and other image attributes here
 
-transform deanna_forestTransform:
+transform deanna_forest_transform:
     anchor (0.5, 0.5) #to place the center point of the image in the center vs the top left corner
-    pos(750, 700)
-    zoom 0.45
+    pos(925, 675)
+    zoom 1
+
+transform deanna_wake_up_forest_floor:
+    anchor(0.5, 0.5)
+    pos(925, 450)
 
 transform nosie_flasherRight:
     anchor(0.5, 0.5)
-    pos(1500, 780)
+    pos(1400, 475)
 
 transform deanna_worried_left:
     anchor(0.5, 0.5)
-    pos(500, 800)
-    zoom 2
+    pos(350, 650)
+    zoom 1
 
+transform dialog_textbox:
+    xalign 0.5
+    yalign 1.0

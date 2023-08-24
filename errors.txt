@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 110: unexpected EOF while parsing
-    .
-     ^
+File "game/sb1_page4.rpy", line 12: expected end of line
+    window auto dialog_textbox
+                ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Aug 17 19:12:04 2023
+Wed Aug 23 19:53:34 2023

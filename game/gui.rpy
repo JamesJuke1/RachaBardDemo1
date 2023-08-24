@@ -57,13 +57,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "fonts/Sagona.otf"
+define gui.text_font = "fonts/times.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "fonts/Sagona.otf"
+define gui.name_text_font = "fonts/times.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/Sagona.otf"
+define gui.interface_text_font = "fonts/times.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 40
@@ -97,7 +97,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 295
+define gui.textbox_height = 325
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
@@ -106,19 +106,19 @@ define gui.textbox_yalign = 0.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 0.4
-define gui.name_ypos = .85
+define gui.name_xpos = 0
+define gui.name_ypos = 0
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0
+define gui.name_xalign = 0.0
 #This seems to be in relation to the dialog text-----
 
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = 0
-define gui.namebox_height = 0
+define gui.namebox_width = 375
+define gui.namebox_height = 100
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
@@ -132,8 +132,8 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 0.25
-define gui.dialogue_ypos = 0.1
+define gui.dialogue_xpos = 125
+define gui.dialogue_ypos = 100
 
 ## The maximum width of dialogue text, in pixels.
 define gui.dialogue_width = 1520

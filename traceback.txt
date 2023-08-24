@@ -1,40 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 15, in script call
-    call dummy_intro
-  File "game/dummy_intro.rpy", line 8, in script
-    window hide textbox
-  File "renpy/common/000window.rpy", line 165, in execute_window_hide
-    trans = eval(p)
-  File "game/dummy_intro.rpy", line 8, in <module>
-    window hide textbox
-NameError: name 'textbox' is not defined
+Compiling ATL code at game/characters.rpy:79
+  File "game/script.rpy", line 26, in script call
+    call sb1_page4
+  File "game/sb1_page4.rpy", line 11, in script
+    show deanna_awake at deanna_wake_up_forest_floor
+  File "game/characters.rpy", line 79, in <module>
+    andchor(0.5, 0.5)
+NameError: name 'andchor' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 15, in script call
-    call dummy_intro
-  File "game/dummy_intro.rpy", line 8, in script
-    window hide textbox
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
-    self.call("execute")
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000window.rpy", line 165, in execute_window_hide
-    trans = eval(p)
+  File "game/script.rpy", line 26, in script call
+    call sb1_page4
+  File "game/sb1_page4.rpy", line 11, in script
+    show deanna_awake at deanna_wake_up_forest_floor
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 759, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 1277, in add
+    thing.visit_all(lambda d : None)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 671, in visit_all
+    for d in self.visit():
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 669, in visit
+    block = self.compile()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 573, in compile
+    block = self.atl.compile(self.context)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 788, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 788, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 1099, in compile
+    child = ctx.eval(expr)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 277, in eval
+    return renpy.python.py_eval(expr, locals=self.context)
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/dummy_intro.rpy", line 8, in <module>
-    window hide textbox
-NameError: name 'textbox' is not defined
+  File "game/characters.rpy", line 79, in <module>
+    andchor(0.5, 0.5)
+NameError: name 'andchor' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Thu Aug 17 16:44:46 2023
+Wed Aug 23 17:30:15 2023
