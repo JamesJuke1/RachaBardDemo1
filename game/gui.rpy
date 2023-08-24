@@ -132,11 +132,11 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 125
-define gui.dialogue_ypos = 100
+define gui.dialogue_xpos = 0.105
+define gui.dialogue_ypos = 0.25
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1520
+define gui.dialogue_width = 1750
 #This applies to the "invisible" box that contains the line break
 #for the dialog text
 

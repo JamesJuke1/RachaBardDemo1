@@ -10,13 +10,13 @@ hide deanna forest blinks
 pause 0.5
 show deanna_awake at deanna_wake_up_forest_floor
 #window auto dialog_textbox
-n " Deanna finally awoke among the ruins of what was left of their getaway wagon. She immediately realized something amiss." 
+n "Deanna finally awoke among the ruins of what was left of their getaway wagon. She immediately realized something amiss." 
 window hide
 pause 0.25
-n " Her friends weren’t with her!"
+n "Her friends weren’t with her!"
 window hide
 pause 0.25
-n " Deana listened for any signs of her friends…"
+n "Deana listened for any signs of her friends…"
 window hide
 pause 0.25
 hide deanna_awake
