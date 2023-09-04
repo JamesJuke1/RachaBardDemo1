@@ -1,4 +1,4 @@
-#stroybook2 page 5, slide 4, Athos stuck hanging from tree
+#storybook2 page 5, slide 4, Athos stuck hanging from tree
 
 label stb2_page5:
 
@@ -9,7 +9,7 @@ n "And there was Athos stuck in  a tree! All tangled up in vines!\n He didn\'t l
 window hide
 pause 0.5
 
-l "Look on the bright side, Athos! At least we were lucky enough to have the vines break our  fall!"
+l "Look on the bright side, Athos! At least we were lucky enough to have the vines break our fall!"
 window hide
 pause 0.5
 
