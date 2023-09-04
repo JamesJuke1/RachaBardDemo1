@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/stb2_page1.rpy", line 8: expected end of line
-    window show with dissolve
-                ^
+File "game/characters.rpy", line 62: style property alpha is not known.
+    alpha 0.25
+         ^
 
-File "game/stb2_page1.rpy", line 11: expected end of line
-    window hide with dissolve
-                ^
+File "game/stb2_page2.rpy", line 13: expected statement.
+    window_place show
+                 ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Sep  4 04:39:56 2023
+Mon Sep  4 06:04:51 2023

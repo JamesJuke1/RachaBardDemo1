@@ -7,10 +7,10 @@ init:
 
 
 #character definition for the text box here.
-define d = Character("Deanna", color="#00C7B6")
-define n = Character("  ",)
-define l = Character("Lethabo", color="#AD1400")
-define a = Character("Athos", color="#4D802E")
+define d = Character("Deanna", color="#00C7B6", ctc="ctc_blink", ctc_position="nestled")
+define n = Character("  ", ctc="ctc_blink", ctc_position="nestled")
+define l = Character("Lethabo", color="#AD1400", ctc="ctc_blink", ctc_position="nestled")
+define a = Character("Athos", color="#4D802E", ctc="ctc_blink", ctc_position="nestled")
 
 #define the images to be used for the characters here. 
 
@@ -45,7 +45,21 @@ image nosie_flasher:
     pause 0.25
     repeat 
 
+#trying thought bubble as the click-to-continue button
+image ctc_blink:
+    "gui/thoughtbubble.png"
+    linear 0.5 alpha 1.0
+    "gui/window_icon.png"
+    linear 0.5 alpha 0.25
+    "gui/thoughtbubble.png"
+    xpos 0.5 ypos 0.5
+    xanchor 0.5 yanchor 0.5
+    repeat
 
+style window_place:
+    xalign 1.0
+    yalign 1.0
+    background Image("images/vines_textbox.png")
 
 
 # image deanna_wakes_up:
