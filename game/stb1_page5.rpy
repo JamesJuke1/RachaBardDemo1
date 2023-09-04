@@ -1,6 +1,6 @@
 #storybook 1 page 5 slide 4
 
-label sb1_page5:
+label stb1_page5:
 
 scene bg sb1_page_5
 pause 2.0
@@ -15,4 +15,4 @@ window hide
 pause 1.0
 n "Deanna had no choice but to investigate. Her friends could be in trouble!"
 
-call sb2_page1
+call stb2_page1

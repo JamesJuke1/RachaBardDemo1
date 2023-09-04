@@ -1,8 +1,8 @@
 #stroybook 2 page 4
 
-label sb2_page4:
+label stb2_page4:
 
-scene bg sb2_page4_5
+scene bg stb2_page 4 with fade
 n "Wait a minute! That was no monster. It was her lion friend, Lethabo!​"
 window hide
 pause 0.5
@@ -20,4 +20,4 @@ window hide
 pause 0.5
 a "“Ah-hem…”"
 
-call finish
+call stb2_page5

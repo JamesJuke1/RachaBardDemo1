@@ -1,6 +1,6 @@
 #storybook 1 page 4
 
-label sb1_page3:
+label stb1_page3:
 
 scene bg sb1_page_3 with flash
 
@@ -26,5 +26,5 @@ d "“Lethabo! Athos! Where are you?”"
 window hide
 pause 0.5
 
-call sb1_page4
+call stb1_page4
 

@@ -28,7 +28,7 @@ image deanna_sleepForest:
 
 #these need to be fixed and more inline with the powerpoint
 image deanna forest blinks:
-    "deanna_sleep.png"
+    "deanna_sleep.png" 
     pause 0.5
     "deanna_eyes_opening.png"
     pause 1.0
@@ -44,6 +44,9 @@ image nosie_flasher:
     "noise_signifier2.png" 
     pause 0.25
     repeat 
+
+
+
 
 # image deanna_wakes_up:
 #    "deanna_sleep.png"

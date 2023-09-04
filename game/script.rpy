@@ -22,5 +22,5 @@ label start:
 
     # These display lines of dialogue.
 
-
-call sb1_page0
+call stb2_page1
+#call sb1_page0

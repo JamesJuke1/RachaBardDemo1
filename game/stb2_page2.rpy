@@ -1,6 +1,6 @@
 #storybook 2 page 2 
 
-label sb2_page2:
+label stb2_page2:
 
 scene bg sb2_page2 with fade
 pause 0.5
@@ -12,5 +12,5 @@ window hide
 pause 0.5
 n "But then—Snap! Deanna stepped on a twig!"
 window hide
-call sb2_page3
+call stb2_page3
 
