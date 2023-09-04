@@ -2,12 +2,13 @@
 errors listed below, and try again.
 
 
-The label stb2_page5 is defined twice, at File "game/stb2_page5.rpyc", line 3:
+File "game/stb2_page1.rpy", line 8: expected end of line
+    window show with dissolve
+                ^
 
-and File "game/stb2_page5.rpy", line 3:
-label stb2_page5:
-
-
+File "game/stb2_page1.rpy", line 11: expected end of line
+    window hide with dissolve
+                ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Sep  4 04:29:45 2023
+Mon Sep  4 04:39:56 2023

@@ -9,7 +9,7 @@ pause 0.5
 d "“Lethabo! You scared me!”​"
 window hide
 pause 0.5
-l "“You scared me, patinaai osim! Wa-ha-ha-ha-ha! ”​"
+l "“You scared me, {i}patinaai osim!{/i} Wa-ha-ha-ha-ha! ”​"
 window hide 
 pause 0.5
 d "“But wait! If you’re here, then where’s Athos?”​"

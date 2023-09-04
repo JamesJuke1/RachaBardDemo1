@@ -7,7 +7,7 @@ pause 0.5
 
 show stb2_page 8_athos on floor 1
 
-n "Athos huffed with annoyance before Deanna draggedin a pair of spectacles."
+n "Athos huffed with annoyance before Deanna dragged in a pair of spectacles."
 window hide
 pause 0.5
 

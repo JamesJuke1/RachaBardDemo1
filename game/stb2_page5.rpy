@@ -13,11 +13,11 @@ l "Look on the bright side, Athos! At least we were lucky enough to have the vin
 window hide
 pause 0.5
 
-a "Luckly?! We've been imprisoned  by a crazy monkey-who just left us to die to a nightmarish monster of legend\n-which is apperently real!"
+a "{i}Luckly?!{/i} We've been imprisoned  by a crazy monkey-who just left us to die to a nightmarish monster of legend\n-which is apperently {i}real!{/i}"
 window hide 
 pause 0.5
 #athos is swinging in the tangled vines with Lethabo climbing the tree
-a "Ooooh, if ever I see that monkey again, I swear I will... I will..\n Sua faccio un mazzo cosi!"
+a "Ooooh, if ever I see that monkey again, I swear I will... I will..\n {i}Sua faccio un mazzo cosi!{/i}"
 window hide
 pause 0.5
 

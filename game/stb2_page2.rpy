@@ -10,7 +10,7 @@ pause 0.5
 n "Shaking in her booties, Deanna doesn’t take the chance. She backs away… slowly… slowly..."
 window hide
 pause 0.5
-n "But then—Snap! Deanna stepped on a twig!"
+n "But then—{i}Snap!{/i} Deanna stepped on a twig!"
 window hide
 call stb2_page3
 

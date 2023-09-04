@@ -17,7 +17,7 @@ show stb2_page 9_aesop vfx 2
 pause 0.25
 
 show stb2_page 9_deanna 2
-d "Aesop is nearby! Amd there's a whole lot of them!"
+d "Aesop is nearby! And there's a whole lot of them!"
 window hide
 pause 0.5
 

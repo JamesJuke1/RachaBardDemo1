@@ -25,7 +25,7 @@ pause 0.25
 n  "Deanna pushed herself thorugh layers of foliage until, finally, she discovered an oh-so magical sight\n that had her go starry-eyed."
 window hide
 pause 0.5
-d "Ya-ho! Look ath this, everyone!"
+d "{i}Ya-ho! {/i}Look ath this, everyone!"
 window hide
 pause 0.5
 
