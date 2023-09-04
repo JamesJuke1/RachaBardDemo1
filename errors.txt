@@ -2,10 +2,11 @@
 errors listed below, and try again.
 
 
-The label stb2_page5 is defined twice, at File "game/sb2_page5.rpyc", line 3:
+The label stb2_page5 is defined twice, at File "game/stb2_page5.rpyc", line 3:
 
 and File "game/stb2_page5.rpy", line 3:
-label stb2_page5:
+label stb2_page5:
+
 
 
 Ren'Py Version: Ren'Py 8.1.1.23060707

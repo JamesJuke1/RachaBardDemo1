@@ -3,7 +3,7 @@
 While running game code:
   File "game/script.rpy", line 25, in script call
     call stb2_page5
-  File "game/sb2_page5.rpy", line 9, in script
+  File "game/stb2_page5.rpy", line 9, in script
     window hide 0.5
   File "renpy/common/000window.rpy", line 169, in execute_window_hide
     _window_hide(trans)
@@ -16,7 +16,7 @@ TypeError: 'float' object is not callable
 Full traceback:
   File "game/script.rpy", line 25, in script call
     call stb2_page5
-  File "game/sb2_page5.rpy", line 9, in script
+  File "game/stb2_page5.rpy", line 9, in script
     window hide 0.5
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
     self.call("execute")
