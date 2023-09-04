@@ -2,7 +2,7 @@
 
 label stb1_page1:
 
-scene bg sb1_page2_floor_far with pushup
+scene bg stb1_page2_floor_far with pushup
 pause 0.5
 n "The air, perfumed with rich earth and tropical flowers, suppressed the forest floor with heavy humidity."
 window hide

@@ -2,7 +2,7 @@
 
 label stb1_page3:
 
-scene bg sb1_page_3 with flash
+scene bg stb1_page_3 with flash
 
 show deanna forest blinks at deanna_forest_transform
 pause 1.5
@@ -13,7 +13,7 @@ show deanna_awake at deanna_wake_up_forest_floor
 n "Deanna finally awoke among the ruins of what was left of their getaway wagon. She immediately realized something amiss." 
 window hide
 pause 0.25
-n "Her friends weren’t with her!"
+n "Her friends weren\’t with her!"
 window hide
 pause 0.25
 n "Deana listened for any signs of her friends…"

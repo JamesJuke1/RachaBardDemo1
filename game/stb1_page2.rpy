@@ -2,7 +2,7 @@
 
 label stb1_page2:
 
-scene bg sb1_page2_floor_close with fade
+scene bg stb1_page2_floor_close with fade
 pause 1.0
 window hide
 pause 0.5

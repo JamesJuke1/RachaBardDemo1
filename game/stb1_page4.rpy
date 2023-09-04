@@ -2,7 +2,7 @@
 
 label stb1_page4:
 
-scene bg sb1_page_4 with dissolve
+scene bg stb1_page_4 with dissolve
 pause 0.5
 show nosie_flasher at nosie_flasherRight
 pause 5.0

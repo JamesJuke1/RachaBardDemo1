@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/sb1_page4.rpy", line 12: expected end of line
-    window auto dialog_textbox
-                ^
+The label stb2_page5 is defined twice, at File "game/sb2_page5.rpyc", line 3:
+
+and File "game/stb2_page5.rpy", line 3:
+label stb2_page5:
+
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Aug 23 19:53:34 2023
+Mon Sep  4 04:19:43 2023

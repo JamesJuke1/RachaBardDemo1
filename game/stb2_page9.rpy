@@ -3,7 +3,7 @@
 label stb2_page9:
 
 show stb2_page 9_deanna 1
-n "Right trhen! Deanna sensed magic!"
+n "Right then! Deanna sensed magic!"
 window hide
 pause 0.5
 
