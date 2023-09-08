@@ -3,33 +3,41 @@
 label stb2_page10:
 scene bg stb2_page 10 with fade
 
-show stb2_page 10_athos and lethabo 1
+show athos_letho_final_upright
 show stb2_page 10_deanna 1
 d "There's  wisps nearby!"
+
 window hide
 pause 0.5
-
-show stb2_page 10_deanna 2 with dissolve
+hide stb2_page 10_deanna 1 with dissolve
+pause 0.5
+show deanna_fly_off
+show athos_letho_final_upright2 with dissolve
+pause 0.5
+hide deanna_fly_off
+hide athos_letho_final_upright
+pause 0.5
 n "Off Deanna flew! She soarded through the branches and vines, following the enchancted wishpers without a second thought."
 window hide
 pause 0.5
 
-show stb2_page 10_athos and lethabo 2 with dissolve
-pause 0.5
 
 scene bg stb2_page 11 with dissolve
 pause 0.5
 
-show stb2_page 11_deanna with pushup
+show deanna_through_grass with pushup
 pause 0.25
+
 n  "Deanna pushed herself thorugh layers of foliage until, finally, she discovered an oh-so magical sight\n that had her go starry-eyed."
 window hide
+hide deanna_through_grass with dissolve
 pause 0.5
 d "{i}Ya-ho! {/i}Look ath this, everyone!"
 window hide
 pause 0.5
 
-show stb2_page 11_athos and lethabo with pushup
+show athos_letho_through_grass with pushup
+show deanna_through_grass
 pause 0.5
 n "Lethabo and Athos bumbled throuight the branches before being stopped in their tracks,\n their jaws dropping  to the ground."
 window hide
@@ -44,7 +52,7 @@ d "This is great! We're sure to find a hero's story here somewhere! Let's go in!
 window hide
 pause 0.5
 
-call finish
+return
 
 
 

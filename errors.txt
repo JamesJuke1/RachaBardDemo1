@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 62: style property alpha is not known.
-    alpha 0.25
-         ^
-
-File "game/stb2_page2.rpy", line 13: expected statement.
-    window_place show
-                 ^
+File "game/stb2_page10.rpy", line 55: expected 'label_name' not found.
+    call return
+        ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Sep  4 06:04:51 2023
+Thu Sep  7 21:17:16 2023

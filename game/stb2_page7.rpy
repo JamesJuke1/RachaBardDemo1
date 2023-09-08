@@ -11,7 +11,8 @@ pause 0.5
 n "Athos tumbles back to solid ground"
 window hide 
 scene bg stb2_page 7
-show stb2_page 7_deanna look 3
 pause 0.5
+show stb2_page 7_deanna look 3
+pause 1.0
 
 call stb2_page8

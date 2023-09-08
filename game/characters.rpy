@@ -20,6 +20,8 @@ image deannaBlink = "deanna_eyes_opening.png"
 image deannaShout = "deanna_calling_out.png"
 image noiseSignal1 = "noise_signifier_1.png"
 image noiseSignale2 = "noise_signifier_2.png"
+image athosswingfromtree = "images/stb2_page 5_athos hanging 4.png"
+image athosswingfromtree2 = "images/stb2_page 5_athos hanging 5.png"
 
 #define the animations for the characters here
 
@@ -62,6 +64,113 @@ style window_place:
     background Image("images/vines_textbox.png")
 
 
+image athos_hang_swing:
+    "images/stb2_page 5_athos hanging 1.png"
+    pause 0.7
+    "images/stb2_page 5_athos hanging 2.png"
+    pause 0.7
+    "images/stb2_page 5_athos hanging 3.png"
+    pause 0.7
+    repeat
+
+image  lethabo_climb:
+    "images/stb2_page 5_lethabo on tree 1.png"
+    xpos 0.75 ypos 1.5
+    pause 0.5
+    "images/stb2_page 5_lethabo on tree 1.png"
+    xpos 0.75 ypos 1.1
+    pause 0.5
+    "images/stb2_page 5_lethabo on tree 2.png"
+    xpos 0.75 ypos 0.7
+    pause 0.5
+    "images/stb2_page 5_lethabo on tree 3.png"
+    xpos 0.65 ypos 0.7
+    pause 0.5
+    "images/stb2_page 5_lethabo on tree 4.png"
+    xpos 0.75 ypos 0.7
+    repeat
+
+image lethabo_claw:
+    "images/stb2_page 5_slash 1.png"
+    pause 0.5
+    "images/stb2_page 5_slash 2.png"
+    pause 0.5
+    repeat
+
+image athosswingfromtree:
+    "images/stb2_page 5_athos hanging 4.png"
+    xpos 0.5 ypos 0.8
+
+image lethabo_after_claw:
+    "images/stb2_page 5_lethabo on tree 4.png"
+    xpos 0.7 ypos 0.8
+
+image athos_on_ground:
+    "images/stb2_page 8_athos on floor 1.png"
+    xpos 0.75 ypos 0.9
+
+image athos_on_ground2:
+    "images/stb2_page 8_athos on floor 2.png"
+    xpos 0.75 ypos 0.9
+    pause 2.0
+
+image athos_on_ground3:
+    "images/stb2_page 8_athos on floor 3.png"
+    xpos 0.75 ypos 0.9
+
+image athos_on_ground4:
+    "images/stb2_page 8_athos on floor 4.png"
+    xpos 0.54 ypos 0.91
+
+image deanna_glasses_drag:
+    "images/stb2_page 8_deanna 1.png"
+    xpos 0.1 ypos 0.999
+
+image deanna_glasses_drag2:
+    "images/stb2_page 8_deanna 2.png"
+    xpos 0.29 ypos 0.9
+
+image deanna_glasses_drag3:
+    "images/stb2_page 8_deanna 3.png"
+    xpos 0.35 ypos 0.9
+
+image deanna_magic_sense:
+    "images/stb2_page 9_aesop vfx 1.png"
+    xpos 0.43 ypos 0.42
+    pause 0.25
+    "images/stb2_page 9_aesop vfx 2.png"
+    xpos 0.43 ypos 0.31
+    pause 0.25
+    repeat
+
+#this will have to work for now, but will need a new image to line up properly. 
+image deanna_magic_sense2:
+    "images/stb2_page 9_aesop vfx 1.png"
+    xpos 0.5 ypos 0.5
+    pause 0.25
+    "images/stb2_page 9_aesop vfx 2.png"
+    xpos 0.5 ypos 0.41
+    pause 0.25
+    repeat
+
+image athos_letho_final_upright:
+    "images/stb2_page 10_athos and lethabo 1.png"
+    xpos 0.47 ypos 0.9
+
+image athos_letho_final_upright2:
+    "images/stb2_page 10_athos and lethabo 2.png"
+    xpos 0.47 ypos 0.9
+
+image deanna_fly_off:
+    "images/stb2_page 10_deanna 2.png"
+
+image deanna_through_grass:
+    "images/stb2_page 11_deanna.png"
+    xpos 0.44 ypos 0.875
+
+image athos_letho_through_grass:
+    "images/stb2_page 11_athos and lethabo.png"
+    xpos 0.435 ypos 0.92
 # image deanna_wakes_up:
 #    "deanna_sleep.png"
 #    pause 0.3
