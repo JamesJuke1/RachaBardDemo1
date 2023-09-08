@@ -166,11 +166,11 @@ image deanna_fly_off:
 
 image deanna_through_grass:
     "images/stb2_page 11_deanna.png"
-    xpos 0.44 ypos 0.875
+    xpos 0.51 ypos 0.61
 
 image athos_letho_through_grass:
     "images/stb2_page 11_athos and lethabo.png"
-    xpos 0.435 ypos 0.92
+    xpos 0.45 ypos 0.88
 # image deanna_wakes_up:
 #    "deanna_sleep.png"
 #    pause 0.3
