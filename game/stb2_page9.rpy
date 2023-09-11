@@ -1,7 +1,7 @@
 #storybook 2 page 9
 
 label stb2_page9:
-
+scene bg stb2_page9
 show stb2_page 9_deanna 1
 show deanna_magic_sense
 window hide

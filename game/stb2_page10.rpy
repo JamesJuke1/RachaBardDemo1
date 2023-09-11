@@ -25,7 +25,7 @@ pause 0.5
 scene bg stb2_page 11 with dissolve
 pause 0.5
 
-show deanna_through_grass with pushup
+show deanna_through_grass
 pause 0.25
 
 n  "Deanna pushed herself thorugh layers of foliage until, finally, she discovered an oh-so magical sight\n that had her go starry-eyed."
@@ -36,15 +36,15 @@ d "{i}Ya-ho! {/i}Look ath this, everyone!"
 window hide
 pause 0.5
 
-show athos_letho_through_grass with pushup
+show athos_letho_through_grass
 show deanna_through_grass
 pause 0.5
 n "Lethabo and Athos bumbled throuight the branches before being stopped in their tracks,\n their jaws dropping  to the ground."
 window hide
 pause 0.5
-
-scene bg stb2_page 12 with pushleft
-pause 0.5
+scene bg stb2_page 12 with pixellate
+scene bg stb2_page 12 with dissolve
+pause 5
 n "What a sight! They found Aesop wisps all right, a whole flock of them surrounding some old, \nforgotten ruins on the forest floor!"
 window hide
 pause 0.5
@@ -52,7 +52,7 @@ d "This is great! We're sure to find a hero's story here somewhere! Let's go in!
 window hide
 pause 0.5
 
-return
+call stb3_page1
 
 
 

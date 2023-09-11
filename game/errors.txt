@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/stb2_page10.rpy", line 55: expected 'label_name' not found.
+    call return
+        ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Thu Sep  7 21:17:16 2023

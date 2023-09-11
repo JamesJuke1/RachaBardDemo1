@@ -4,6 +4,7 @@ init:
     $flash = Fade(.5, 0, .75, color="#fff")
     $flashDelay = Fade(.1, 0,  .1, color="#000")
     $speedFlash = Fade(.01, .01, .01, color="#fff")
+    $slowFade =  Fade(2,0,2,color="#000")
 
 
 #character definition for the text box here.
@@ -171,6 +172,13 @@ image deanna_through_grass:
 image athos_letho_through_grass:
     "images/stb2_page 11_athos and lethabo.png"
     xpos 0.45 ypos 0.88
+
+image stb3_deanna_animation:
+    "images/stb3_page 1_deanna 1.png"
+    pause 0.5
+    "images/stb3_page 1_deanna 2.png"
+    pause 0.5
+
 # image deanna_wakes_up:
 #    "deanna_sleep.png"
 #    pause 0.3

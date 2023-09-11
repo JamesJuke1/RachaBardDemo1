@@ -139,7 +139,7 @@ define gui.dialogue_xpos = 0.105
 define gui.dialogue_ypos = 0.25
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1750
+define gui.dialogue_width = 1200
 #This applies to the "invisible" box that contains the line break
 #for the dialog text
 

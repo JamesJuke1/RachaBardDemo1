@@ -25,7 +25,7 @@ pause 0.5
 
 show deanna_glasses_drag2 with dissolve
 show athos_on_ground3
-a "Grazie, topolina."
+a "{i}Grazie, topolina.{/i}"
 window hide
 pause 0.5
 hide deanna_glasses_drag2 with dissolve

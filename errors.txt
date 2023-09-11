@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/stb2_page10.rpy", line 55: expected 'label_name' not found.
-    call return
-        ^
+File "game/stb2_page10.rpy", line 45: expected 'simple_expression' not found.
+    scene bg stb2_page 12 with 
+                               ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Sep  7 21:17:16 2023
+Fri Sep  8 16:21:45 2023
