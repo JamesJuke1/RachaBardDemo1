@@ -3,7 +3,7 @@
 label stb2_page5:
 
 scene bg stb2_page 5 with pushdown
-pause 0.5
+
 show athos_hang_swing
 n "And there was Athos stuck in  a tree! All tangled up in vines!\n He didn\'t look pleased in the slightest"
 window hide

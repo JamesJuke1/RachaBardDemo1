@@ -3,7 +3,7 @@ label stb2_page7:
 
 scene bg stb2_page 6
 pause 0.5
-show stb2_page 6_deanna look 1
+show stb2_page 6_deanna look 1  with vpunch
 window hide 
 pause 0.5
 show stb2_page 6_deanna look 2 with dissolve

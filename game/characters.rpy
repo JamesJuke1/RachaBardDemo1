@@ -1,10 +1,12 @@
 #define characters and the animations that they will/may use here
-
+#if scene is called it clears all images that were displayed before.
 init:
     $flash = Fade(.5, 0, .75, color="#fff")
     $flashDelay = Fade(.1, 0,  .1, color="#000")
     $speedFlash = Fade(.01, .01, .01, color="#fff")
     $slowFade =  Fade(2,0,2,color="#000")
+    $speedDissolve = Dissolve(0.01)
+    $slowDissolve = Dissolve(2.0)
 
 
 #character definition for the text box here.
@@ -12,7 +14,6 @@ define d = Character("Deanna", color="#00C7B6", ctc="ctc_blink", ctc_position="n
 define n = Character("  ", ctc="ctc_blink", ctc_position="nestled")
 define l = Character("Lethabo", color="#AD1400", ctc="ctc_blink", ctc_position="nestled")
 define a = Character("Athos", color="#4D802E", ctc="ctc_blink", ctc_position="nestled")
-
 #define the images to be used for the characters here. 
 
 image deannaSleep = "deanna_sleep.png"
@@ -39,6 +40,10 @@ image deanna forest blinks:
     pause .75
     "deanna_eyes_opening.png"
     pause 0.5
+    "deanna_sleep.png"
+    pause .75
+    "deanna_eyes_opening.png"
+    pause 0.25
     repeat
         
 image nosie_flasher:
@@ -50,11 +55,11 @@ image nosie_flasher:
 
 #trying thought bubble as the click-to-continue button
 image ctc_blink:
-    "gui/thoughtbubble.png"
+    "images/arrow_1.png"
     linear 0.5 alpha 1.0
-    "gui/window_icon.png"
+    "images/arrow_2.png"
     linear 0.5 alpha 0.25
-    "gui/thoughtbubble.png"
+    "images/arrow_1.png"
     xpos 0.5 ypos 0.5
     xanchor 0.5 yanchor 0.5
     repeat
@@ -66,8 +71,6 @@ style window_place:
 
 
 image athos_hang_swing:
-    "images/stb2_page 5_athos hanging 1.png"
-    pause 0.7
     "images/stb2_page 5_athos hanging 2.png"
     pause 0.7
     "images/stb2_page 5_athos hanging 3.png"
@@ -89,7 +92,7 @@ image  lethabo_climb:
     pause 0.5
     "images/stb2_page 5_lethabo on tree 4.png"
     xpos 0.75 ypos 0.7
-    repeat
+    
 
 image lethabo_claw:
     "images/stb2_page 5_slash 1.png"
@@ -179,6 +182,102 @@ image stb3_deanna_animation:
     "images/stb3_page 1_deanna 2.png"
     pause 0.5
 
+image stb3_page1_darkened:
+    "images/stb3_page 1_darkened.png"
+    xpos 0.5335 ypos 0.64
+
+image stb3_page1_smeared_fall_down:
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.2
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.225
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.25
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.275
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.3
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.325
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.35
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.375
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.425
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.45
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.475
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.5
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.525
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.55
+    pause 0.15
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.575
+    pause 0.15
+
+image stb3_deanna_kneel_floor:
+    "images/stb3_page 1_deanna 1.png"
+    xpos 0.5 ypos 0.85
+
+image stb3_deanna_kneel_floor_2:
+    "images/stb3_page_1_deanna_2.png"
+    xpos 0.5 ypos 0.85
+
+image stb3_smeared_charge:
+    "images/stb3_page 2_smeared 1.png"
+    xpos 0.45 ypos 0.9
+
+image stb3_deanna_scarred:
+    "images/stb3_page 2_deanna 1.png"
+    xpos 0.65 ypos 0.9
+
+image stb3_deanna_spear_scarred:
+    "images/stb3_page 2_deanna 2.png"
+    xpos 0.65 ypos 0.9
+
+image stb3_smeared_spear_jump:
+    "images/stb3_page 2_smeared 2.png"
+    xpos .3 ypos 0.9
+
+image stb3_blue_swoop:
+    "images/stb3_page 2_blur swipe.png"
+
+image stb3_page2_smear_jump_spear:
+    "images/stb3_page 2_smeared 3.png"
+    xpos 0.5 ypos 0.99999999999
+
+image athos_let_grab_deanna:
+    "images/stb3_page 3_athos lethabo and deanna.png"
+    xpos 0.3 ypos 0.95
+
+image smearerd_chase:
+    "images/stb3_page 3_smeared.png"
+    xpos 0.65 ypos 0.9
+
+image stb3_page5_smog:
+    "images/stb3_page 5_smog 1.png"
+    xpos 0.95 ypos 0.9
+
+
+
 # image deanna_wakes_up:
 #    "deanna_sleep.png"
 #    pause 0.3
@@ -215,7 +314,7 @@ transform deanna_forest_transform:
 
 transform deanna_wake_up_forest_floor:
     anchor(0.5, 0.5)
-    pos(925, 450)
+    pos(925, 425)
 
 transform nosie_flasherRight:
     anchor(0.5, 0.5)
@@ -223,8 +322,8 @@ transform nosie_flasherRight:
 
 transform deanna_worried_left:
     anchor(0.5, 0.5)
-    pos(350, 650)
-    zoom 1
+    pos(800, 650)
+    zoom 0.85
 
 transform dialog_textbox:
     xalign 0.5

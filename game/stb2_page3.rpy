@@ -4,10 +4,9 @@ label stb2_page3:
 scene bg stb2_page3 with speedFlash
 show stb2_page 4_scary figure 1 with speedFlash
 pause 0.3
-hide scarryLet
-show stb2_page 4_scary figure 2
+show stb2_page 4_scary figure 2 with hpunch
 pause 0.3
-show stb2_page 4_scary figure 2
+show stb2_page 4_scary figure 2 with hpunch
 show stb2_page 4_d screaming at deanna_worried_left
 d "“Aaaaaaaaaaaah!”"
 window hide

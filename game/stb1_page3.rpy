@@ -2,13 +2,17 @@
 
 label stb1_page3:
 
-scene bg stb1_page_3 with flash
+scene bg_stb1_page_3_1 with zoomin
+pause 0.5
+show bg_stb1_page_3_2 with dissolve
+pause 0.25
 
 show deanna forest blinks at deanna_forest_transform
-pause 1.5
+pause 4.0
+hide bg_stb1_page_3_1 with dissolve
 hide deanna forest blinks
-pause 0.5
-show deanna_awake at deanna_wake_up_forest_floor
+scene bg_stb1_page_3_2 with dissolve
+show deanna_awake at deanna_wake_up_forest_floor with dissolve
 #window auto dialog_textbox
 n "Deanna finally awoke among the ruins of what was left of their getaway wagon. She immediately realized something amiss." 
 window hide
