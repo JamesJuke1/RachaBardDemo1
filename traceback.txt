@@ -1,38 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-SyntaxError: invalid syntax (game/characters.rpy, line 327)
+While running game code:
+  File "game/script.rpy", line 25, in script call
+    call stb3_page1
+  File "game/stb3_page1.rpy", line 10, in script
+    hide stb3_deanna_kneel_floor with Dissolve
+Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000000474b160>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000492b310>}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 600, in main
-    renpy.game.script.analyze()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1052, in analyze
-    i.analyze()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1312, in analyze
-    self.atl.analyze(parameters)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 804, in analyze
-    self.mark_constant(analysis)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 832, in mark_constant
-    i.mark_constant(analysis)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\atl.py", line 1177, in mark_constant
-    constant = min(constant, is_constant_expr(expr))
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\py3analysis.py", line 558, in is_constant_expr
-    node, literal = ccache.ast_eval_literal(expr)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\py3analysis.py", line 790, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1088, in py_compile
-    raise e
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1034, in py_compile
-    raise orig_e
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1027, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/characters.rpy, line 327)
+  File "game/script.rpy", line 25, in script call
+    call stb3_page1
+  File "game/stb3_page1.rpy", line 10, in script
+    hide stb3_deanna_kneel_floor with Dissolve
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3973, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3924, in instantiate_transition
+    raise Exception("Expected transition to be a displayable, not a %r" % trans)
+Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000000474b160>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000492b310>}>
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Tue Sep 19 16:57:30 2023
+Tue Oct 10 14:55:59 2023
