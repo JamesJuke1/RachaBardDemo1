@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 75: Indentation mismatch.
+File "game/stb3_page1.rpy", line 11: expected statement.
+    dSecond
+           ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Tue Sep 19 17:17:55 2023
+Thu Oct 19 12:45:53 2023

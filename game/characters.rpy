@@ -14,6 +14,7 @@ define d = Character("Deanna", color="#00C7B6", ctc="ctc_blink", ctc_position="n
 define n = Character("  ", ctc="ctc_blink", ctc_position="nestled")
 define l = Character("Lethabo", color="#AD1400", ctc="ctc_blink", ctc_position="nestled")
 define a = Character("Athos", color="#4D802E", ctc="ctc_blink", ctc_position="nestled")
+define dSecond = Character("Deanna", window_style="window2")
 #define the images to be used for the characters here. 
 
 image deannaSleep = "deanna_sleep.png"
@@ -56,12 +57,13 @@ image nosie_flasher:
 #trying thought bubble as the click-to-continue button
 image ctc_blink:
     "images/arrow_1.png"
+    zoom 0.5
     linear 0.5 alpha 1.0
     "images/arrow_2.png"
-    linear 0.5 alpha 0.25
+    linear 0.5 alpha 1.0
+    zoom 0.5
     "images/arrow_1.png"
-    xpos 0.5 ypos 0.5
-    xanchor 0.5 yanchor 0.5
+    zoom 0.5
     repeat
 
 style window_place:
@@ -188,55 +190,63 @@ image stb3_page1_darkened:
 
 image stb3_page1_smeared_fall_down:
     "images/stb3_page 1_smeared mask.png"
-    xpos 0.5 ypos 0.2
-    pause 0.15
+    xpos 0.5 ypos 0.31
+    pause 2.0
     "images/stb3_page 1_smeared mask.png"
-    xpos 0.5 ypos 0.225
-    pause 0.15
+    xpos 0.5 ypos 0.315
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
-    xpos 0.5 ypos 0.25
-    pause 0.15
-    "images/stb3_page 1_smeared mask.png"
-    xpos 0.5 ypos 0.275
-    pause 0.15
-    "images/stb3_page 1_smeared mask.png"
-    xpos 0.5 ypos 0.3
-    pause 0.15
+    xpos 0.5 ypos 0.32
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.325
-    pause 0.15
+    pause 0.33
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.335
+    pause 0.33
+    "images/stb3_page 1_smeared mask.png"
+    xpos 0.5 ypos 0.345
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.35
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.375
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.425
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.45
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.475
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.5
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.525
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.55
-    pause 0.15
+    pause 0.33
     "images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.575
-    pause 0.15
+    pause 0.33
 
 image stb3_deanna_kneel_floor:
     "images/stb3_page 1_deanna 1.png"
     xpos 0.5 ypos 0.85
+    pause 1.0
+    "images/stb3_page_1_deanna_2_2.png"
+    xpos 0.5 ypos 0.85
+    pause 1.0
 
+image strb3_deanna_kneel_before_alert:
+    "images/stb3_page 1_deanna 1.png"
+    xpos 0.5 ypos 0.85
+    pause 1.0
 image stb3_deanna_kneel_floor_2:
     "images/stb3_page_1_deanna_2.png"
     xpos 0.5 ypos 0.85
@@ -276,7 +286,154 @@ image stb3_page5_smog:
     "images/stb3_page 5_smog 1.png"
     xpos 0.95 ypos 0.9
 
+image letho_page9:
+    "images/stb3_page 9_lethabo.png"
+    anchor(0.5, 0.5)
+    xpos 0.35 ypos 0.6
 
+image athos_page9:
+    "images/stb3_page 9_athos.png"
+    anchor(0.5, 0.5)
+    xpos .65 ypos 0.6
+
+image leth_page10:
+    "images/stb3_page 10_lethabo.png"
+    anchor(0.5, 0.5)
+    xpos .18 ypos .8
+
+image atho_page10:
+    "images/stb3_page 10_athos.png"
+    anchor(0.5, 0.5)
+    xpos 0.4 ypos 0.7
+
+image deanna_getsAngry_page13:
+    "images/stb3_page 13_deanna 1.png"
+    anchor(0.5, 0.5)
+    xpos 0.5
+    ypos 0.5
+
+image deanna_getsAngry_page13_2:
+    "images/stb3_page 13_deanna 2.png"
+    anchor(0.5, 0.5)
+    xpos 0.5
+    ypos 0.6
+
+image deanna_getsAngry_page13_3:
+    "images/stb3_page 13_deanna 3.png"
+    anchor(0.5, 0.5)
+    xpos 0.5
+    ypos 0.6
+
+image deanna_lyre_page13:
+    "images/stb3_page 13_lyre.png"
+    anchor(0.5, 0.5)
+    xpos 0.38
+    ypos 0.76
+
+image deanna_page10:
+    "images/stb3_page 10_deanna.png"
+    anchor(0.5, 0.5)
+    xpos 0.82 ypos 0.58
+
+image deanna_flyToFight_page14:
+    "images/stb3_page 14_deanna 1.png"
+    anchor(0.5, 0.5)
+    xpos 0.79
+    ypos 0.74
+
+image smearedFight:
+    "images/stb3_page 15_smeared.png"
+    anchor(0.5, 0.5)
+    xpos 0.57
+    ypos 0.6
+
+image leth_atho_smearedWin:
+    "images/stb3_page 15_lethabo and athos.png"
+    anchor(0.5,0.5)
+    xpos 0.3
+    ypos 0.8
+
+image deannaStandTall_smearedFight:
+    "images/stb3_page 15_deanna.png"
+    anchor(0.5,0.5)
+    xpos 0.325 
+    ypos 0.5
+image deannaShieldMagic:
+    "images/stb3_page 15_shield.png"
+    anchor(0.5,0.5)
+    xpos 0.5
+    ypos 0.515
+    zoom 1.1
+
+image shieldSplinter:
+    "images/stb3_page 16_shield 1.png"
+    anchor(0.5, 0.5)
+    xpos 0.45
+    ypos 0.5
+
+image shieldSplinterSmearedAttack:
+    "images/stb3_page 16_shield 2.png"
+    anchor(0.5, 0.5)
+    xpos 0.45
+    ypos 0.5
+    alpha 0.5
+
+image shieldSplinterSmearedAttack2:
+    "images/stb3_page 16_shield 2.png"
+    anchor(0.5, 0.5)
+    xpos 0.45
+    ypos 0.5
+    alpha 1.0
+
+image smearedAttacking:
+    "images/stb3_page 16_smeared.png"
+    anchor(0.5,0.5)
+    xpos 0.65
+    ypos 0.525
+    alpha 0.25
+
+image smearedAttack:
+    "images/stb3_page 16_smeared.png"
+    anchor(0.5,0.5)
+    xpos 0.65
+    ypos 0.525
+    alpha 1.5
+
+image deannaLoaseShield:
+    "images/stb3_page 17_deanna 1.png"
+    pause 0.25
+    "images/stb3_page 17_deanna 2.png"
+    pause 0.5
+    "images/stb3_page 17_deanna 3.png"
+    pause 2.0
+
+image lethoAthosSlowStand:
+    "images/stb3_page 17_lethabo and athos behind.png"
+    
+
+image athosActionPop:
+    "images/stb3_page 17_athos action pop.png" with easeinright
+    anchor(0.5,0.5)
+    xpos 0.28 
+    ypos 0.58
+
+image lethoActionPop:
+    "images/stb3_page 17_lethabo action pop.png" with easeinleft
+    anchor(0.5,0.5)
+    xpos 0.7
+    ypos 0.53
+
+image deannaPreActionPop:
+    "images/stb3_page 17_deanna action pop 1.png"
+    anchor(0.5,0.5)
+    xpos 0.5 
+    ypos 0.53
+
+image deannaActionPop:
+    "images/stb3_page 17_deanna action pop 2.png"
+    anchor(0.5,0.5)
+    xpos 0.5 
+    ypos 0.53
 
 # image deanna_wakes_up:
 #    "deanna_sleep.png"
@@ -328,3 +485,10 @@ transform deanna_worried_left:
 transform dialog_textbox:
     xalign 0.5
     yalign 1.0
+
+style window2:
+    xalign 0.5
+    xfill True
+    yalign 1.0
+    ysize gui.textbox_height
+    background Image("images/vines_textbox.png")
