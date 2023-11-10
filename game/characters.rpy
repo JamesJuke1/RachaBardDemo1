@@ -10,11 +10,14 @@ init:
 
 
 #character definition for the text box here.
-define d = Character("Deanna", color="#00C7B6", ctc="ctc_blink", ctc_position="nestled")
-define n = Character("  ", ctc="ctc_blink", ctc_position="nestled")
-define l = Character("Lethabo", color="#AD1400", ctc="ctc_blink", ctc_position="nestled")
-define a = Character("Athos", color="#4D802E", ctc="ctc_blink", ctc_position="nestled")
-define dSecond = Character("Deanna", window_style="window2")
+define d = Character("Deanna", color="#00C7B6", ctc="ctc_blink", ctc_position="nestled", window_style="window1")
+define n = Character("  ", ctc="ctc_blink", ctc_position="nestled", window_style="window1")
+define l = Character("Lethabo", color="#AD1400", ctc="ctc_blink", ctc_position="nestled", window_style="window1")
+define a = Character("Athos", color="#4D802E", ctc="ctc_blink", ctc_position="nestled", window_style="window1")
+define dSecond = Character("Deanna", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
+define n_second = Character(" ", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
+define letho_second = Character("Lethabo", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
+define athos_second = Character("Athos", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
 #define the images to be used for the characters here. 
 
 image deannaSleep = "deanna_sleep.png"
@@ -485,6 +488,14 @@ transform deanna_worried_left:
 transform dialog_textbox:
     xalign 0.5
     yalign 1.0
+
+style window1:
+    xalign 0.5
+    xfill True
+    yalign 0.0
+    ysize gui.textbox_height
+    background Image("images/vines_textbox.png")
+
 
 style window2:
     xalign 0.5

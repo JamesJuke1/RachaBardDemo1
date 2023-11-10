@@ -2,33 +2,67 @@
 
 While running game code:
   File "game/script.rpy", line 25, in script call
-    call stb3_page1
-  File "game/stb3_page1.rpy", line 10, in script
-    hide stb3_deanna_kneel_floor with Dissolve
-Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000000474b160>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000492b310>}>
+    call stb3_page9
+  File "game/stb3_page9.rpy", line 19, in script call
+    call stb3_page10
+  File "game/stb3_page10.rpy", line 12, in script call
+    call stb3_page11
+  File "game/stb3_page11.rpy", line 8, in script call
+    call stb3_page12
+  File "game/stb3_page12.rpy", line 12, in script call
+    call stb3_page13
+  File "game/stb3_page13.rpy", line 29, in script call
+    call stb3_page14
+  File "game/stb3_page14.rpy", line 14, in script call
+    call stb3_page15
+  File "game/stb3_page15.rpy", line 18, in script call
+    call stb3_page16
+  File "game/stb3_page16.rpy", line 20, in script call
+    call stb3_page17
+  File "game/stb3_page17.rpy", line 48, in script call
+    call stb3_page18
+  File "game/stb3_page18.rpy", line 11, in script
+    hide stb3_page 18_white out with speed
+  File "game/stb3_page18.rpy", line 11, in <module>
+    hide stb3_page 18_white out with speed
+NameError: name 'speed' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 25, in script call
-    call stb3_page1
-  File "game/stb3_page1.rpy", line 10, in script
-    hide stb3_deanna_kneel_floor with Dissolve
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
-    return self.interact(trans_pause=True,
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3973, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3924, in instantiate_transition
-    raise Exception("Expected transition to be a displayable, not a %r" % trans)
-Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000000474b160>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000492b310>}>
+    call stb3_page9
+  File "game/stb3_page9.rpy", line 19, in script call
+    call stb3_page10
+  File "game/stb3_page10.rpy", line 12, in script call
+    call stb3_page11
+  File "game/stb3_page11.rpy", line 8, in script call
+    call stb3_page12
+  File "game/stb3_page12.rpy", line 12, in script call
+    call stb3_page13
+  File "game/stb3_page13.rpy", line 29, in script call
+    call stb3_page14
+  File "game/stb3_page14.rpy", line 14, in script call
+    call stb3_page15
+  File "game/stb3_page15.rpy", line 18, in script call
+    call stb3_page16
+  File "game/stb3_page16.rpy", line 20, in script call
+    call stb3_page17
+  File "game/stb3_page17.rpy", line 48, in script call
+    call stb3_page18
+  File "game/stb3_page18.rpy", line 11, in script
+    hide stb3_page 18_white out with speed
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1674, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/stb3_page18.rpy", line 11, in <module>
+    hide stb3_page 18_white out with speed
+NameError: name 'speed' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Tue Oct 10 14:55:59 2023
+Fri Nov 10 11:28:08 2023

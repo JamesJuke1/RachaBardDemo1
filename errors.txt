@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/stb3_page1.rpy", line 11: expected statement.
-    dSecond
-           ^
+File "game/stb3_page17.rpy", line 48: expected 'image_name_component' not found.
+    hide 
+         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Oct 19 12:45:53 2023
+Fri Nov 10 11:34:05 2023
