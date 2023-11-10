@@ -2,7 +2,6 @@
 
 label stb3_page16:
 scene bg stb3_page 16
-n "start stb3_page16"
 pause 1.0
 show shieldSplinter
 pause 1.0
@@ -14,5 +13,8 @@ hide shieldSplinter
 hide shieldSplinterSmearedAttack
 show smearedAttack with speedFlash
 show shieldSplinterSmearedAttack2 with speedFlash
-n "end stb3_page16"
+pause 1.0
+n_second "But the Smeared fought back! Despite Deanna’s magic sizzling its body, the monster  pushed against her shield with yellow magic—making it crack!"
+window hide
+pause 1.0
 call stb3_page17
