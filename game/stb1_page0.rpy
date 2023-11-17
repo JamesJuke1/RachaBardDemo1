@@ -8,4 +8,5 @@ n "As Deanna came to, she first sensed the rainforest’s song of chirping crick
 window hide
 pause 0.5
 
+
 call stb1_page1

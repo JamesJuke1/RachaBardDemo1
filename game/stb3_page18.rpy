@@ -23,7 +23,7 @@ but even its mask was cracking even more from the pressure!"
 window hide
 dSecond "With a small yet mighty cry, Deanna pushed back with all her might"
 window hide
-dSecond "“Yaaaaaaaah!”"
+dSecond "{i}“Yaaaaaaaah!”{/i}"
 window hide
 pause 1.0
 call finish

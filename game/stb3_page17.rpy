@@ -14,28 +14,28 @@ n "A desperate tear ran down her face."
 window hide
 pause 1.0
 hide stb3_page 17_deanna 1
-show stb3_page 17_deanna 3 with speedDissolve
+show stb3_page 17_deanna 2 with speedDissolve
 pause 0.5
 n_second "Suddenly, it felt like the weight of the world was lifted off her shoulders! 
 Deanna felt a warmth hold her up from behind. "
 window hide
 pause 0.5
 hide stb3_page 17_deanna 3
-show stb3_page 17_deanna 2
+show stb3_page 17_deanna 3
 pause 1.0
-hide stb3_page 17_deanna 2
+hide stb3_page 17_deanna 3
 show lethoAthosSlowStand with easeinbottom 
-show stb3_page 17_deanna 2 with dissolve
-hide stb3_page 17_deanna 2 with pixellate
-show stb3_page 17_deanna 3 with speedFlash
+show stb3_page 17_deanna 3 with easeintop
+# hide stb3_page 17_deanna 2 with pixellate
+# show stb3_page 17_deanna 3 with speedFlash
 n_second "To Deanna’s shock, Lethabo and Athos held her up!"
 window hide
 pause 2.0
-show athosActionPop with easeinleft
+show athosActionPop with easeinright
 athos_second "“We got your back, topolina!”"
 window hide
 pause 1.0
-show lethoActionPop with easeinright
+show lethoActionPop with easeinleft
 letho_second "“Give it your all!”"
 window hide
 pause 1.0
@@ -46,4 +46,5 @@ pause 1.0
 show deannaActionPop with speedFlash
 pause 1.0
 scene stb3_page 18_gray bg
+show stb3_page 18_gray bg
 call stb3_page18

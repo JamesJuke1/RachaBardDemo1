@@ -60,13 +60,13 @@ image nosie_flasher:
 #trying thought bubble as the click-to-continue button
 image ctc_blink:
     "images/arrow_1.png"
-    zoom 0.5
+    zoom 0.2
     linear 0.5 alpha 1.0
     "images/arrow_2.png"
     linear 0.5 alpha 1.0
-    zoom 0.5
+    zoom 0.1
     "images/arrow_1.png"
-    zoom 0.5
+    zoom 0.2
     repeat
 
 style window_place:
