@@ -2,6 +2,8 @@
 
 While running game code:
   File "game/script.rpy", line 25, in script call
+    call stb3_page8
+  File "game/stb3_page8.rpy", line 19, in script call
     call stb3_page9
   File "game/stb3_page9.rpy", line 19, in script call
     call stb3_page10
@@ -19,18 +21,18 @@ While running game code:
     call stb3_page16
   File "game/stb3_page16.rpy", line 20, in script call
     call stb3_page17
-  File "game/stb3_page17.rpy", line 48, in script call
+  File "game/stb3_page17.rpy", line 50, in script call
     call stb3_page18
-  File "game/stb3_page18.rpy", line 11, in script
-    hide stb3_page 18_white out with speed
-  File "game/stb3_page18.rpy", line 11, in <module>
-    hide stb3_page 18_white out with speed
-NameError: name 'speed' is not defined
+  File "game/stb3_page18.rpy", line 26, in script
+    dSecond "{i}“Yaaaaaaaah!”{}"
+Exception: Empty text tag in '{i}“Yaaaaaaaah!”{}'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 25, in script call
+    call stb3_page8
+  File "game/stb3_page8.rpy", line 19, in script call
     call stb3_page9
   File "game/stb3_page9.rpy", line 19, in script call
     call stb3_page10
@@ -48,21 +50,28 @@ Full traceback:
     call stb3_page16
   File "game/stb3_page16.rpy", line 20, in script call
     call stb3_page17
-  File "game/stb3_page17.rpy", line 48, in script call
+  File "game/stb3_page17.rpy", line 50, in script call
     call stb3_page18
-  File "game/stb3_page18.rpy", line 11, in script
-    hide stb3_page 18_white out with speed
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1674, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/stb3_page18.rpy", line 11, in <module>
-    hide stb3_page 18_white out with speed
-NameError: name 'speed' is not defined
+  File "game/stb3_page18.rpy", line 26, in script
+    dSecond "{i}“Yaaaaaaaah!”{}"
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 674, in display_say
+    what_text.update()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 1865, in update
+    tokens = self.tokenize(text)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 2345, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "textsupport.pyx", line 147, in renpy.text.textsupport.tokenize
+Exception: Empty text tag in '{i}“Yaaaaaaaah!”{}'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Fri Nov 10 11:28:08 2023
+Fri Nov 10 14:42:28 2023
