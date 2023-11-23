@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/stb3_page17.rpy", line 48: expected 'image_name_component' not found.
-    hide 
-         ^
+File "game/stb1_page1.rpy", line 11: expected 'simple_expression' not found.
+    scene bg stb1_page 1 with 
+                              ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Nov 10 11:34:05 2023
+Wed Nov 22 22:21:49 2023

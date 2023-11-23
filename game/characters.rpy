@@ -18,8 +18,8 @@ define dSecond = Character("Deanna", window_style="window2", ctc="ctc_blink", ct
 define n_second = Character(" ", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
 define letho_second = Character("Lethabo", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
 define athos_second = Character("Athos", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
-#define the images to be used for the characters here. 
 
+#define the images to be used for the characters here. 
 image deannaSleep = "deanna_sleep.png"
 image deannaAwake = "deanne_awake.png"
 image deannaBlink = "deanna_eyes_opening.png"
@@ -30,23 +30,22 @@ image athosswingfromtree = "images/stb2_page 5_athos hanging 4.png"
 image athosswingfromtree2 = "images/stb2_page 5_athos hanging 5.png"
 
 #define the animations for the characters here
-
 image deanna_sleepForest:
     "deannaSleep"
 
 #these need to be fixed and more inline with the powerpoint
 image deanna forest blinks:
-    "deanna_sleep.png" 
+    "stb1 page 3 deanna waking up 1.png" 
     pause 0.5
-    "deanna_eyes_opening.png"
+    "stb1 page 3 deanna waking up 2.png"
     pause 1.0
-    "deanna_sleep.png"
+    "stb1 page 3 deanna waking up 1.png"
     pause .75
-    "deanna_eyes_opening.png"
+    "stb1 page 3 deanna waking up 2.png"
     pause 0.5
-    "deanna_sleep.png"
+    "stb1 page 3 deanna waking up 1.png"
     pause .75
-    "deanna_eyes_opening.png"
+    "stb1 page 3 deanna waking up 2.png"
     pause 0.25
     repeat
         
