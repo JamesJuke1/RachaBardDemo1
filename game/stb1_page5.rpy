@@ -2,7 +2,7 @@
 
 label stb1_page5:
 
-scene bg stb1_page_5
+scene bg stb1_page 5
 pause 2.0
 n "Further down the hill, Deanna beheld a stretch of entangling vines and wild grass."
 window hide

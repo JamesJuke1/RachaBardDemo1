@@ -1,59 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 25, in script call
-    call stb3_page8
-  File "game/stb3_page8.rpy", line 19, in script call
-    call stb3_page9
-  File "game/stb3_page9.rpy", line 19, in script call
-    call stb3_page10
-  File "game/stb3_page10.rpy", line 12, in script call
-    call stb3_page11
-  File "game/stb3_page11.rpy", line 8, in script call
-    call stb3_page12
-  File "game/stb3_page12.rpy", line 12, in script call
-    call stb3_page13
-  File "game/stb3_page13.rpy", line 29, in script call
-    call stb3_page14
-  File "game/stb3_page14.rpy", line 14, in script call
-    call stb3_page15
-  File "game/stb3_page15.rpy", line 18, in script call
-    call stb3_page16
-  File "game/stb3_page16.rpy", line 20, in script call
-    call stb3_page17
-  File "game/stb3_page17.rpy", line 50, in script call
-    call stb3_page18
-  File "game/stb3_page18.rpy", line 26, in script
-    dSecond "{i}“Yaaaaaaaah!”{}"
-Exception: Empty text tag in '{i}“Yaaaaaaaah!”{}'.
+While loading <renpy.display.im.Image object ('images/bg stb1_page.png') at 0x0000000004742040>:
+  File "game/script.rpy", line 26, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 12, in script call
+    call stb1_page1
+  File "game/stb1_page1.rpy", line 8, in script
+    n "The air, perfumed with rich earth and tropical flowers, suppressed the forest floor with heavy humidity."
+OSError: Couldn't find file 'images/bg stb1_page.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 25, in script call
-    call stb3_page8
-  File "game/stb3_page8.rpy", line 19, in script call
-    call stb3_page9
-  File "game/stb3_page9.rpy", line 19, in script call
-    call stb3_page10
-  File "game/stb3_page10.rpy", line 12, in script call
-    call stb3_page11
-  File "game/stb3_page11.rpy", line 8, in script call
-    call stb3_page12
-  File "game/stb3_page12.rpy", line 12, in script call
-    call stb3_page13
-  File "game/stb3_page13.rpy", line 29, in script call
-    call stb3_page14
-  File "game/stb3_page14.rpy", line 14, in script call
-    call stb3_page15
-  File "game/stb3_page15.rpy", line 18, in script call
-    call stb3_page16
-  File "game/stb3_page16.rpy", line 20, in script call
-    call stb3_page17
-  File "game/stb3_page17.rpy", line 50, in script call
-    call stb3_page18
-  File "game/stb3_page18.rpy", line 26, in script
-    dSecond "{i}“Yaaaaaaaah!”{}"
+  File "game/script.rpy", line 26, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 12, in script call
+    call stb1_page1
+  File "game/stb1_page1.rpy", line 8, in script
+    n "The air, perfumed with rich earth and tropical flowers, suppressed the forest floor with heavy humidity."
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
@@ -62,16 +26,54 @@ Full traceback:
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
     display_say(who,
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 674, in display_say
-    what_text.update()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 1865, in update
-    tokens = self.tokenize(text)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 2345, in tokenize
-    tokens.extend(textsupport.tokenize(i))
-  File "textsupport.pyx", line 147, in renpy.text.textsupport.tokenize
-Exception: Empty text tag in '{i}“Yaaaaaaaah!”{}'.
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
+    return cache.get(self, render=True)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
+    surf = image.load()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
+    raise e
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/bg stb1_page.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Fri Nov 10 14:42:28 2023
+Wed Nov 22 22:33:41 2023
