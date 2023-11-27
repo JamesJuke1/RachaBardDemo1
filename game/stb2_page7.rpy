@@ -1,18 +1,18 @@
 
 label stb2_page7:
 
-scene bg stb2_page 6
+scene bg_stb2_page6
 pause 0.5
-show stb2_page 6_deanna look 1  with vpunch
+show stb2_d_look_1_page6  with vpunch
 window hide 
 pause 0.5
-show stb2_page 6_deanna look 2 with dissolve
+show stb2_d_look_2_page6 with dissolve
 pause 0.5
 n "Athos tumbles back to solid ground"
 window hide 
-scene bg stb2_page 7
+scene bg_stb2_page7
 pause 0.5
-show stb2_page 7_deanna look 3
+show stb2_d_look_3_page
 pause 1.0
 
 call stb2_page8

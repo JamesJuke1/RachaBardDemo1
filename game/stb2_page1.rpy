@@ -4,7 +4,7 @@
 label stb2_page1:
 
 #$ renpy.movie_cutscene("images/sample_movie_pp.webm")
-scene bg stb2_page 1 with fade
+scene bg_stb2_page1 with fade
 pause 1
 window show dissolve
 n "Deanna peeked through the foliage"

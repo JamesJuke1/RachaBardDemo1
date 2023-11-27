@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/stb1_page1.rpy", line 11: expected 'simple_expression' not found.
-    scene bg stb1_page 1 with 
-                              ^
+File "game/characters.rpy", line 118: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xpos 0.54 ypos 0.91
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Nov 22 22:21:49 2023
+Mon Nov 27 12:32:08 2023

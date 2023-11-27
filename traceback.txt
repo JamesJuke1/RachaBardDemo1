@@ -1,35 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/bg stb1_page.png') at 0x0000000004742040>:
+While loading <renpy.display.im.Image object ('images/vines_textbox_no_bg.png') at 0x0000000004689340>:
   File "game/script.rpy", line 26, in script call
     call stb1_page0
-  File "game/stb1_page0.rpy", line 12, in script call
-    call stb1_page1
-  File "game/stb1_page1.rpy", line 8, in script
-    n "The air, perfumed with rich earth and tropical flowers, suppressed the forest floor with heavy humidity."
-OSError: Couldn't find file 'images/bg stb1_page.png'.
+  File "game/stb1_page0.rpy", line 7, in script
+    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
+  File "game/script.rpy", line 26, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 7, in script
+    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+OSError: Couldn't find file 'images/vines_textbox_no_bg.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 670, in main
+    run(restart)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 144, in run
+    renpy.execution.run_context(True)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\execution.py", line 953, in run_context
+    context.run()
   File "game/script.rpy", line 26, in script call
     call stb1_page0
-  File "game/stb1_page0.rpy", line 12, in script call
-    call stb1_page1
-  File "game/stb1_page1.rpy", line 8, in script
-    n "The air, perfumed with rich earth and tropical flowers, suppressed the forest floor with heavy humidity."
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
-    display_say(who,
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "game/stb1_page0.rpy", line 7, in script
+    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "game/script.rpy", line 26, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 7, in script
+    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 898, in execute
+    statement_name(stmt_name)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 47, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
@@ -42,23 +59,28 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transition.py", line 379, in render
+    top = render(self.new_widget, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transform.py", line 909, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1371, in render
+    back = render(style.background, bw, bh, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
@@ -71,9 +93,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/bg stb1_page.png'.
+OSError: Couldn't find file 'images/vines_textbox_no_bg.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Wed Nov 22 22:33:41 2023
+Mon Nov 27 12:32:43 2023

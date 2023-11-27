@@ -2,7 +2,7 @@
 
 label stb2_page4:
 
-scene bg stb2_page 4 with fade
+scene bg_stb2_page4 with fade
 n "Wait a minute! That was no monster. It was her lion friend, Lethabo!​"
 window hide
 pause 0.5

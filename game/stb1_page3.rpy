@@ -1,9 +1,9 @@
 #storybook 1 page 4
 
 label stb1_page3:
-scene bg stb1_page_3 
+scene bg_stb1_page3_1 
 pause 1.0
-scene bg_stb1_page_3_1 with zoomin
+scene bg_stb1_page_3_2 with zoomin
 hide bg stb1_page3
 pause 0.5
 show bg_stb1_page_3_2 with dissolve
