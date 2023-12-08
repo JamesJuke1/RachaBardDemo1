@@ -2,7 +2,7 @@
 
 label stb2_page9:
 scene bg_stb2_page9
-show sstb2_page9_d_1
+show stb2_page9_d_1
 show deanna_magic_sense
 window hide
 pause 3.0

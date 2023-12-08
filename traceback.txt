@@ -1,52 +1,153 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/vines_textbox_no_bg.png') at 0x0000000004689340>:
+While loading <renpy.display.im.Image object ('image/Storybook 3/stb3_images/stb3_page 15_lethabo and athos.png') at 0x0000000005195250>:
   File "game/script.rpy", line 26, in script call
     call stb1_page0
-  File "game/stb1_page0.rpy", line 7, in script
-    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
-  File "game/script.rpy", line 26, in script call
-    call stb1_page0
-  File "game/stb1_page0.rpy", line 7, in script
-    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-OSError: Couldn't find file 'images/vines_textbox_no_bg.png'.
+  File "game/stb1_page0.rpy", line 14, in script call
+    call stb1_page1
+  File "game/stb1_page1.rpy", line 12, in script call
+    call stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3
+  File "game/stb1_page3.rpy", line 35, in script call
+    call stb1_page4
+  File "game/stb1_page4.rpy", line 10, in script call
+    call stb1_page5
+  File "game/stb1_page5.rpy", line 18, in script call
+    call stb2_page1
+  File "game/stb2_page1.rpy", line 14, in script call
+    call stb2_page2
+  File "game/stb2_page2.rpy", line 15, in script call
+    call stb2_page3
+  File "game/stb2_page3.rpy", line 17, in script call
+    call stb2_page4
+  File "game/stb2_page4.rpy", line 23, in script call
+    call stb2_page5
+  File "game/stb2_page5.rpy", line 38, in script call
+    call stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7
+  File "game/stb2_page7.rpy", line 19, in script call
+    call stb2_page8
+  File "game/stb2_page8.rpy", line 48, in script call
+    call stb2_page9
+  File "game/stb2_page9.rpy", line 21, in script call
+    call stb2_page10
+  File "game/stb2_page10.rpy", line 55, in script call
+    call stb3_page1
+  File "game/stb3_page1.rpy", line 32, in script call
+    call stb3_page2
+  File "game/stb3_page2.rpy", line 35, in script call
+    call stb3_page3
+  File "game/stb3_page3.rpy", line 22, in script call
+    call stb3_page4
+  File "game/stb3_page4.rpy", line 12, in script call
+    call stb3_page5
+  File "game/stb3_page5.rpy", line 17, in script call
+    call stb3_page6
+  File "game/stb3_page6.rpy", line 14, in script call
+    call stb3_page7
+  File "game/stb3_page7.rpy", line 12, in script call
+    call stb3_page8
+  File "game/stb3_page8.rpy", line 19, in script call
+    call stb3_page9
+  File "game/stb3_page9.rpy", line 19, in script call
+    call stb3_page10
+  File "game/stb3_page10.rpy", line 12, in script call
+    call stb3_page11
+  File "game/stb3_page11.rpy", line 8, in script call
+    call stb3_page12
+  File "game/stb3_page12.rpy", line 12, in script call
+    call stb3_page13
+  File "game/stb3_page13.rpy", line 29, in script call
+    call stb3_page14
+  File "game/stb3_page14.rpy", line 14, in script call
+    call stb3_page15
+  File "game/stb3_page15.rpy", line 8, in script
+    pause 0.5
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'image/Storybook 3/stb3_images/stb3_page 15_lethabo and athos.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 144, in run
-    renpy.execution.run_context(True)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\execution.py", line 953, in run_context
-    context.run()
   File "game/script.rpy", line 26, in script call
     call stb1_page0
-  File "game/stb1_page0.rpy", line 7, in script
-    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
-  File "game/script.rpy", line 26, in script call
-    call stb1_page0
-  File "game/stb1_page0.rpy", line 7, in script
-    n "As Deanna came to, she first sensed the rainforest’s song of chirping crickets and chattering cicadas."
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 898, in execute
-    statement_name(stmt_name)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
-    return self.interact(trans_pause=True,
+  File "game/stb1_page0.rpy", line 14, in script call
+    call stb1_page1
+  File "game/stb1_page1.rpy", line 12, in script call
+    call stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3
+  File "game/stb1_page3.rpy", line 35, in script call
+    call stb1_page4
+  File "game/stb1_page4.rpy", line 10, in script call
+    call stb1_page5
+  File "game/stb1_page5.rpy", line 18, in script call
+    call stb2_page1
+  File "game/stb2_page1.rpy", line 14, in script call
+    call stb2_page2
+  File "game/stb2_page2.rpy", line 15, in script call
+    call stb2_page3
+  File "game/stb2_page3.rpy", line 17, in script call
+    call stb2_page4
+  File "game/stb2_page4.rpy", line 23, in script call
+    call stb2_page5
+  File "game/stb2_page5.rpy", line 38, in script call
+    call stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7
+  File "game/stb2_page7.rpy", line 19, in script call
+    call stb2_page8
+  File "game/stb2_page8.rpy", line 48, in script call
+    call stb2_page9
+  File "game/stb2_page9.rpy", line 21, in script call
+    call stb2_page10
+  File "game/stb2_page10.rpy", line 55, in script call
+    call stb3_page1
+  File "game/stb3_page1.rpy", line 32, in script call
+    call stb3_page2
+  File "game/stb3_page2.rpy", line 35, in script call
+    call stb3_page3
+  File "game/stb3_page3.rpy", line 22, in script call
+    call stb3_page4
+  File "game/stb3_page4.rpy", line 12, in script call
+    call stb3_page5
+  File "game/stb3_page5.rpy", line 17, in script call
+    call stb3_page6
+  File "game/stb3_page6.rpy", line 14, in script call
+    call stb3_page7
+  File "game/stb3_page7.rpy", line 12, in script call
+    call stb3_page8
+  File "game/stb3_page8.rpy", line 19, in script call
+    call stb3_page9
+  File "game/stb3_page9.rpy", line 19, in script call
+    call stb3_page10
+  File "game/stb3_page10.rpy", line 12, in script call
+    call stb3_page11
+  File "game/stb3_page11.rpy", line 8, in script call
+    call stb3_page12
+  File "game/stb3_page12.rpy", line 12, in script call
+    call stb3_page13
+  File "game/stb3_page13.rpy", line 29, in script call
+    call stb3_page14
+  File "game/stb3_page14.rpy", line 14, in script call
+    call stb3_page15
+  File "game/stb3_page15.rpy", line 8, in script
+    pause 0.5
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
@@ -59,10 +160,6 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transition.py", line 379, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
@@ -71,17 +168,21 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1371, in render
-    back = render(style.background, bw, bh, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
   File "render.pyx", line 266, in renpy.display.render.render
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
     return cache.get(self, render=True)
@@ -93,9 +194,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/vines_textbox_no_bg.png'.
+OSError: Couldn't find file 'image/Storybook 3/stb3_images/stb3_page 15_lethabo and athos.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Mon Nov 27 12:32:43 2023
+Mon Nov 27 14:48:58 2023

@@ -1,7 +1,7 @@
 #storybook 3 page 2
 
 label stb3_page2:
-scene bg_stb3_page_2
+scene bg_stb3_page2
 n "start stb3_page2"
 
 show stb3_smeared_charge #this likely needs to be an animation

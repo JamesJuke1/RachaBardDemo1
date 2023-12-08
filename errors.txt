@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 118: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    xpos 0.54 ypos 0.91
+File "game/stb3_page11.rpy", line 7: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Athos and Lethabo bravely stood their ground as the Smeared towered over them!"
     ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Nov 27 12:32:08 2023
+Mon Nov 27 14:47:08 2023

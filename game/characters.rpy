@@ -19,46 +19,62 @@ define n_second = Character(" ", window_style="window2", ctc="ctc_blink", ctc_po
 define letho_second = Character("Lethabo", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
 define athos_second = Character("Athos", window_style="window2", ctc="ctc_blink", ctc_position="nestled")
 
+#storybook 1 custom images
+image bg_stb1_page1 = "images/Storybook 1/bg stb1_page 1.png"
+image bg_stb1_page2 = "images/Storybook 1/bg stb1_page 2.png"
+image bg_stb1_page3_1 = "images/Storybook 1/bg stb1_page 3_1.png"
+image bg_stb1_page3_2 = "images/Storybook 1/bg stb1_page 3_2.png"
+image bg_stb1_page4 = "images/Storybook 1/bg stb1_page 4.png"
+image bg_stb1_page5 = "images/Storybook 1/bg stb1_page 5.png"
+image stb1_deanna_worried = "images/Storybook 1/deanna_close_worried.png"
+image stb1_EXTRA = "images/Storybook 1/EXTRA.png"
+image stb1_deanna_call_out = "images/Storybook 1/stb1_page 3_deanna calling out.png"
+image stb1_deanna_wake_up = "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+image stb1_deanna_wake_up_2 = "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
+image stb1_deanna_kneel_wake_up = "images/Strorybook 1/stb1_page 3_deanna waking up 3.png"
+image stb1_scarry_sound_sfx1 = "images/Storybook 1/stb1_page4_sfx 1.png"
+image stb1_scarry_sound_sfx2 = "images/Storybook 1/stb1_page4_sfx 2.png"
+
 
 #these need to be fixed and more inline with the powerpoint
 image deanna forest blinks:
-    stb3_page1_deanna_1 
+    "images/Storybook 1/stb1_page 3_deanna waking up 1.png" 
     pause 0.5
-    stb1_deanna_wake_up_2
+    "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
     pause 1.0
-    stb3_page1_deanna_1
+    "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
     pause .75
-    stb1_deanna_wake_up_2
+    "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
     pause 0.5
-    stb3_page1_deanna_1
+    "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
     pause .75
-    stb1_deanna_wake_up_2
+    "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
     pause 0.25
     repeat
         
 image nosie_flasher:
-    stb1_scarry_sound_sfx1  
+    "images/Storybook 1/stb1_page4_sfx 1.png"  
     pause 0.25
-    stb1_scarry_sound_sfx1 
+    "images/Storybook 1/stb1_page4_sfx 2.png" 
     pause 0.25
     repeat 
 
 #trying thought bubble as the click-to-continue button
 image ctc_blink:
-    "images/arrow_1.png"
+    "images/Misc_Text_GUI/arrow_1.png"
     zoom 0.2
     linear 0.5 alpha 1.0
-    "images/arrow_2.png"
+    "images/Misc_Text_GUI/arrow_2.png"
     linear 0.5 alpha 1.0
     zoom 0.1
-    "images/arrow_1.png"
+    "images/Misc_Text_GUI/arrow_1.png"
     zoom 0.2
     repeat
 
 style window_place:
     xalign 1.0
     yalign 1.0
-    background Image("images/vines_textbox.png")
+    background Image("images/Misc_Text_GUI/vines_textbox.png")
 
 
 image athos_hang_swing:
@@ -68,72 +84,72 @@ image athos_hang_swing:
     pause 0.7
     repeat
 
-image  lethabo_climb:
-    stb2_letho_climb_tree1
+image lethabo_climb:
+    "images/Storybook 2/stb2_page 5_lethabo on tree 1.png"
     xpos 0.75 ypos 1.5
     pause 0.5
-    stb2_letho_climb_tree2
+    "images/Storybook 2/stb2_page 5_lethabo on tree 1.png"
     xpos 0.75 ypos 1.1
     pause 0.5
-    stb2_letho_climb_tree1
+    "images/Storybook 2/stb2_page 5_lethabo on tree 1.png"
     xpos 0.75 ypos 0.7
     pause 0.5
-    stb2_letho_climb_tree2
+    "images/Storybook 2/stb2_page 5_lethabo on tree 2.png"
     xpos 0.65 ypos 0.7
     pause 0.5
-    stb2_letho_climb_tree1
+    "images/Storybook 2/stb2_page 5_lethabo on tree 2.png"
     xpos 0.75 ypos 0.7
     
 
 image lethabo_claw:
-    stb2_letho_claw_swipe_tree1
+    "images/Storybook 2/stb2_page 5_lethabo on tree 3.png"
     pause 0.5
-    stb2_letho_claw_swipe_tree2
+    "images/Storybook 2/stb2_page 5_lethabo on tree 4.png"
     pause 0.5
     repeat
 
 image athosswingfromtree:
-    stb2_athos_falling_tree1
+    "images/Storybook 2/stb2_page 5_athos hanging 4.png"
     xpos 0.5 ypos 0.8
 
 image lethabo_after_claw:
-    stb2_letho_claw_swipe_tree2
+    "images/Storybook 2/stb2_page 5_lethabo on tree 4.png"
     xpos 0.7 ypos 0.8
 
 image athos_on_ground:
-    stb2_page8_athos_floor1
+    "images/Storybook 2/stb2_page 8_athos on floor 1.png"
     xpos 0.75 ypos 0.9
 
 image athos_on_ground2:
-    stb2_page8_athos_floor2
+    "images/Storybook 2/stb2_page 8_athos on floor 2.png"
     xpos 0.75 ypos 0.9
     pause 2.0
 
 image athos_on_ground3:
-    stb2_page8_athos_floor3
+    "images/Storybook 2/stb2_page 8_athos on floor 3.png"
     xpos 0.75 ypos 0.9
 
 image athos_on_ground4:
-    stb2_page8_athos_floor4
+    "images/Storybook 2/stb2_page 8_athos on floor 4.png"
     xpos 0.54 ypos 0.91
 
 image deanna_glasses_drag:
-    stb2_page8_d_1
+    "images/Storybook 2/stb2_page 8_deanna 1.png"
     xpos 0.1 ypos 0.999
 
 image deanna_glasses_drag2:
-    stb2_page8_d_2
+    "images/Storybook 2/stb2_page 8_deanna 2.png"
     xpos 0.29 ypos 0.9
 
 image deanna_glasses_drag3:
-    stb2_page8_d_3
+    "images/Storybook 2/stb2_page 8_deanna 3.png"
     xpos 0.35 ypos 0.9
 
 image deanna_magic_sense:
-    stb2_page9_aesop_vfx1
+    "images/Storybook 2/stb2_page 9_aesop vfx 1.png"
     xpos 0.43 ypos 0.42
     pause 0.25
-    stb2_page9_aesop_vfx2
+    "images/Storybook 2/stb2_page 9_aesop vfx 2.png"
     xpos 0.43 ypos 0.31
     pause 0.25
     repeat
@@ -148,7 +164,7 @@ image athos_letho_final_upright2:
     xpos 0.47 ypos 0.9
 
 image deanna_fly_off:
-    stb2_page10_d_2
+    "images/Storybook 2/stb2_page 10_deanna 2.png"
 
 image deanna_through_grass:
     stb2_page11_d
@@ -169,267 +185,264 @@ image stb3_page1_darkened:
     xpos 0.5335 ypos 0.64
 
 image stb3_page1_smeared_fall_down:
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.31
     pause 2.0
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.315
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.32
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.325
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.335
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.345
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.35
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.375
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.425
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.45
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.475
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.5
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.525
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.55
     pause 0.33
-    stb3_page1_smeared_mask
+    "images/Storybook 3/stb3_images/stb3_page 1_smeared mask.png"
     xpos 0.5 ypos 0.575
     pause 0.33
 
 image stb3_deanna_kneel_floor:
-    stb3_page1_deanna_1
+    "images/Storybook 3/stb3_images/stb3_page 1_deanna 1.png"
     xpos 0.5 ypos 0.85
     pause 1.0
-    stb3_page1_deanna_2
+    "images/Storybook 3/stb3_images/stb3_page 1_deanna 2.png"
     xpos 0.5 ypos 0.85
     pause 1.0
 
 image strb3_deanna_kneel_before_alert:
-    stb3_page1_deanna_1
+    "images/Storybook 3/stb3_images/stb3_page 1_deanna 1.png"
     xpos 0.5 ypos 0.85
     pause 1.0
 image stb3_deanna_kneel_floor_2:
-    stb3_page1_deanna_2
+    "images/Storybook 3/stb3_images/stb3_page 1_deanna 1.png"
     xpos 0.5 ypos 0.85
 
 image stb3_smeared_charge:
-    stb3_page2_smeared_1
+    "images/Storybook 3/stb3_images/stb3_page 2_smeared 1.png"
     xpos 0.45 ypos 0.9
 
 image stb3_deanna_scarred:
-    stb3_page2_deanna_1
+    "images/Storybook 3/stb3_images/stb3_page 2_deanna 1.png"
     xpos 0.65 ypos 0.9
 
 image stb3_deanna_spear_scarred:
-    stb3_page2_deanna_2
+    "images/Storybook 3/stb3_images/stb3_page 2_deanna 2.png"
     xpos 0.65 ypos 0.9
 
 image stb3_smeared_spear_jump:
-    stb3_page2_smeared_2
+    "images/Storybook 3/stb3_images/stb3_page 2_smeared 2.png"
     xpos .3 ypos 0.9
 
 image stb3_blue_swoop:
-    stb3_page2_blur_swipe
+    "images/Storybook 3/stb3_images/stb3_page 2_blur swipe.png"
 
 image stb3_page2_smear_jump_spear:
-    stb3_page2_smeared_3
+    "images/Storybook 3/stb3_images/stb3_page 2_smeared 3.png"
     xpos 0.5 ypos 0.99999999999
 
 image athos_let_grab_deanna:
-    stb3_page3_leth_athos
+    "images/Storybook 3/stb3_images/stb3_page 3_athos lethabo and deanna.png"
     xpos 0.3 ypos 0.95
 
 image smearerd_chase:
-    stb3_page3_smeared
+    "images/Storybook 3/stb3_images/stb3_page 3_smeared.png"
     xpos 0.65 ypos 0.9
 
 image stb3_page5_smog:
-    stb3_page5_smog1
+    "images/Storybook 3/stb3_images/stb3_page 5_smog 1.png"
     xpos 0.95 ypos 0.9
 
 image letho_page9:
-    stb3_page9_letho
+    "images/Storybook 3/stb3_images/stb3_page 9_lethabo.png"
     anchor(0.5, 0.5)
     xpos 0.35 ypos 0.6
 
 image athos_page9:
-    stb3_page9_athos
+    "images/Storybook 3/stb3_images/stb3_page 9_athos.png"
     anchor(0.5, 0.5)
     xpos .65 ypos 0.6
 
 image leth_page10:
-    stb3_page10_letho
+    "images/Storybook 3/stb3_images/stb3_page 10_lethabo.png"
     anchor(0.5, 0.5)
     xpos .18 ypos .8
 
 image atho_page10:
-    stb3_page10_athos
+    "images/Storybook 3/stb3_images/stb3_page 10_athos.png"
     anchor(0.5, 0.5)
     xpos 0.4 ypos 0.7
 
 image deanna_getsAngry_page13:
-    stb3_page13_deanna1
+    "images/Storybook 3/stb3_images/stb3_page 13_deanna 1.png"
     anchor(0.5, 0.5)
     xpos 0.5
     ypos 0.5
 
 image deanna_getsAngry_page13_2:
-    stb3_page13_deanna2
+    "images/Storybook 3/stb3_images/stb3_page 13_deanna 2.png"
     anchor(0.5, 0.5)
     xpos 0.5
     ypos 0.6
 
 image deanna_getsAngry_page13_3:
-    stb3_page13_deanna3
+    "images/Storybook 3/stb3_images/stb3_page 13_deanna 3.png"
     anchor(0.5, 0.5)
     xpos 0.5
     ypos 0.6
 
 image deanna_lyre_page13:
-    stb3_page13_lyre
+    "images/Storybook 3/stb3_images/stb3_page 13_lyre.png"
     anchor(0.5, 0.5)
     xpos 0.38
     ypos 0.76
 
 image deanna_page10:
-    stb3_page10_deanna
+    "images/Storybook 3/stb3_images/stb3_page 10_deanna.png"
     anchor(0.5, 0.5)
     xpos 0.82 ypos 0.58
 
 image deanna_flyToFight_page14:
-    stb3_page14_deanna1
+    "images/Storybook 3/stb3_images/stb3_page 14_deanna 1.png"
     anchor(0.5, 0.5)
     xpos 0.79
     ypos 0.74
 
 image smearedFight:
-    stb3_page15_smeared
+    "images/Storybook 3/stb3_images/stb3_page 15_smeared.png"
     anchor(0.5, 0.5)
     xpos 0.57
     ypos 0.6
 
 image leth_atho_smearedWin:
-    stb3_page15_letho_athos
+    "images/Storybook 3/stb3_images/stb3_page 15_lethabo and athos.png"
     anchor(0.5,0.5)
     xpos 0.3
     ypos 0.8
 
 image deannaStandTall_smearedFight:
-    stb3_page15_deanna
+    "images/Storybook 3/stb3_images/stb3_page 15_deanna.png"
     anchor(0.5,0.5)
     xpos 0.325 
     ypos 0.5
 image deannaShieldMagic:
-    stb3_page15_shield
+    "images/Storybook 3/stb3_images/stb3_page 15_shield.png"
     anchor(0.5,0.5)
     xpos 0.5
     ypos 0.515
     zoom 1.1
 
 image shieldSplinter:
-    stb3_page16_shield1
+    "images/Storybook 3/stb3_images/stb3_page 16_shield 1.png"
     anchor(0.5, 0.5)
     xpos 0.45
     ypos 0.5
 
 image shieldSplinterSmearedAttack:
-    stb3_page16_shield2
+    "images/Storybook 3/stb3_images/stb3_page 16_shield 2.png"
     anchor(0.5, 0.5)
     xpos 0.45
     ypos 0.5
     alpha 0.5
 
 image shieldSplinterSmearedAttack2:
-    stb3_page16_shield2
+    "images/Storybook 3/stb3_images/stb3_page 16_shield 2.png"
     anchor(0.5, 0.5)
     xpos 0.45
     ypos 0.5
     alpha 1.0
 
 image smearedAttacking:
-    stb3_page16_smeared
+    "images/Storybook 3/stb3_images/stb3_page 16_smeared.png"
     anchor(0.5,0.5)
     xpos 0.65
     ypos 0.525
     alpha 0.25
 
 image smearedAttack:
-    stb3_page16_smeared
+    "images/Storybook 3/stb3_images/stb3_page 16_smeared.png"
     anchor(0.5,0.5)
     xpos 0.65
     ypos 0.525
     alpha 1.5
 
 image deannaLoaseShield:
-    stb3_page17_deanna1
+    "images/Storybook 3/stb3_images/stb3_page 17_deanna 1.png"
     pause 0.25
-    stb3_page17_deanna2
+    "images/Storybook 3/stb3_images/stb3_page 17_deanna 2.png"
     pause 0.5
-    stb3_page17_deanna3
+    "images/Storybook 3/stb3_images/stb3_page 17_deanna 3.png"
     pause 2.0
 
 image lethoAthosSlowStand:
-   stb3_page17_letho_athos_behind
+   "images/Storybook 3/stb3_images/stb3_page 17_lethabo and athos behind.png"
     
 
 image athosActionPop:
-    stb3_page17_athos_action_pop with easeinright
+    "images/Storybook 3/stb3_images/stb3_page 17_athos action pop.png" with easeinright
     anchor(0.5,0.5)
     xpos 0.28 
     ypos 0.58
 
 image lethoActionPop:
-    stb3_page17_letho_action_pop with easeinleft
+    "images/Storybook 3/stb3_images/stb3_page 17_lethabo action pop.png" with easeinleft
     anchor(0.5,0.5)
     xpos 0.7
     ypos 0.53
 
 image deannaPreActionPop:
-    stb3_page17_d_action_pop1
+    "images/Storybook 3/stb3_images/stb3_page 17_deanna action pop 1.png"
     anchor(0.5,0.5)
     xpos 0.5 
     ypos 0.53
 
 image deannaActionPop:
-    stb3_page17_d_action_pop2
+    "images/Storybook 3/stb3_images/stb3_page 17_deanna action pop 2.png"
     anchor(0.5,0.5)
     xpos 0.5 
     ypos 0.53
 
-# image deanna_wakes_up:
-#    "deanna_sleep.png"
-#    pause 0.3
-#    "deanna_eyes_opening.png"
-#    pause 0.3
-#    "deanna_sleep.png"
-#    pause 0.3
-#   "deanna_eyes_opening.png"
-#n "Deanna finally awoke"
-#    pause 0.3
-#n "She immediately realized something amiss"
-#    pause 0.3
-#    "deanna_awake.png"
-#    pause 0.5
-#    "deanna_calling_out.png"
+image deanna_wakes_up:
+   "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+   pause 0.3
+   "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
+   pause 0.3
+   "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+   pause 0.3
+   "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
+   pause 0.3
+   "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+   pause 0.5
+   "images/Storybook 1/stb1_page 3_deanna waking up 3.png"
 
 #image diana fly: //this is an example for making an animation
 #   "dianaFlap.png"
@@ -480,3 +493,6 @@ style window2:
     yalign 1.0
     ysize gui.textbox_height
     background Image("images/vines_textbox.png")
+
+
+
