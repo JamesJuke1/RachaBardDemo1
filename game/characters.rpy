@@ -404,7 +404,7 @@ image deannaLoaseShield:
     pause 2.0
 
 image lethoAthosSlowStand:
-   "images/Storybook 3/stb3_images/stb3_page 17_lethabo and athos behind.png"
+    "images/Storybook 3/stb3_images/stb3_page 17_lethabo and athos behind.png"
     
 
 image athosActionPop:
@@ -432,17 +432,18 @@ image deannaActionPop:
     ypos 0.53
 
 image deanna_wakes_up:
-   "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
-   pause 0.3
-   "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
-   pause 0.3
-   "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
-   pause 0.3
-   "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
-   pause 0.3
-   "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
-   pause 0.5
-   "images/Storybook 1/stb1_page 3_deanna waking up 3.png"
+    "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+    pause 0.3
+    "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
+    pause 0.3
+    "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+    pause 0.3
+    "images/Storybook 1/stb1_page 3_deanna waking up 2.png"
+    pause 0.3
+    "images/Storybook 1/stb1_page 3_deanna waking up 1.png"
+    pause 0.5
+    "images/Storybook 1/stb1_page 3_deanna waking up 3.png"
+
 
 #image diana fly: //this is an example for making an animation
 #   "dianaFlap.png"
@@ -479,6 +480,11 @@ transform dialog_textbox:
     xalign 0.5
     yalign 1.0
 
+transform down_arrow_placement:
+    anchor(0.5,0.5)
+    pos(1300, 750)
+
+
 style window1:
     xalign 0.5
     xfill True
@@ -494,5 +500,8 @@ style window2:
     ysize gui.textbox_height
     background Image("images/vines_textbox.png")
 
+#Explorer Mode 1
+
+image exp_mode_dew_drop = 'animation_water droplet 1.png'
 
 

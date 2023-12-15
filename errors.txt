@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/stb3_page11.rpy", line 7: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "Athos and Lethabo bravely stood their ground as the Smeared towered over them!"
-    ^
+File "game/em_page1.rpy", line 245: 'style' is not a keyword argument or valid child of the screen statement.
+    style 'transparent_window'
+         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Nov 27 14:47:08 2023
+Fri Dec 15 07:48:37 2023
