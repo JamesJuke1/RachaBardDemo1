@@ -1,8 +1,8 @@
 #storybook 2 page 9
 
 label stb2_page9:
-scene bg stb2_page9
-show stb2_page 9_deanna 1
+scene bg_stb2_page9
+show stb2_page9_d_1
 show deanna_magic_sense
 window hide
 pause 3.0
@@ -12,8 +12,7 @@ pause 2.0
 hide deanna_magic_sense
 
 
-show stb2_page 9_deanna 2
-show deanna_magic_sense2
+show stb2_page9_d_2
 
 d "Aesop is nearby! And there's a whole lot of them!"
 window hide

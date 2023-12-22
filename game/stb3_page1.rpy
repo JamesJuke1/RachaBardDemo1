@@ -2,7 +2,7 @@
 
 label stb3_page1:
 
-scene bg stb3_page 1
+scene bg_stb3_page1
 show strb3_deanna_kneel_before_alert with dissolve
 n "Deanna pondered the Aesop's tale."
 pause 1.0

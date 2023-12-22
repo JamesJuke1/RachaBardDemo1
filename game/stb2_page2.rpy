@@ -2,7 +2,7 @@
 
 label stb2_page2:
 
-scene bg stb2_page 2 with fade
+scene bg_stb2_page2 with fade
 pause 0.75
 n "…only to spy a large, brutish figure stalking the shady grove up ahead.​"
 window hide

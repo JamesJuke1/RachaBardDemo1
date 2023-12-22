@@ -13,7 +13,7 @@ hide stb3_page 18_white out with speedDissolve
 pause 0.5
 hide stb3_page 18_deanna action pop with dissolve
 hide stb3_page 18_smeared action pop with dissolve
-scene bg stb3_page 18
+scene bg_stb3_page18
 pause 1.0
 n_second "Her little body burned brighter and brighter with teal light. 
 Lethabo and Athos squeezed their eyes shut as they dug in their heels and kept her steady."

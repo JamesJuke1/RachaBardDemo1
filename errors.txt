@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/stb1_page1.rpy", line 11: expected 'simple_expression' not found.
-    scene bg stb1_page 1 with 
-                              ^
+File "game/em_page1.rpy", line 245: 'style' is not a keyword argument or valid child of the screen statement.
+    style 'transparent_window'
+         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Nov 22 22:21:49 2023
+Fri Dec 15 07:48:37 2023

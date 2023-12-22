@@ -2,7 +2,7 @@
 
 label stb2_page8:
 
-scene bg stb2_page 8
+scene bg_stb2_page8
 pause 0.5
 
 show athos_on_ground
