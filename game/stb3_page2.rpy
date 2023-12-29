@@ -20,10 +20,13 @@ hide stb3_smeared_charge
 stop sound
 show stb3_smeared_spear_jump
 show stb3_page 2_spear with speedDissolve
+play sound 'audio/stroybook 3/Sounds + Music/The Smeared/Smeared (Scared).mp3'
 show stb3_deanna_spear_scarred
+stop sound
 hide stb3_deanna_scarred
 pause 1.0
 show stb3_page 2_blur swipe
+play sound 'audio/stroybook 3/Sounds + Music/The Smeared/Smeared Growl.mp3'
 hide stb3_smeared_spear_jump
 hide stb3_deanna_spear_scarred
 show stb3_blue_swoop with speedDissolve
@@ -35,4 +38,4 @@ pause 5.0
 
 pause 1.0
 pause 1.0
-call stb3_page3
+call stb3_page3 from _call_stb3_page3

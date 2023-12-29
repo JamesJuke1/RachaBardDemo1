@@ -18,7 +18,8 @@ pause 1.0
 play sound 'audio/storybook 3/Sounds + Music/Deanna Storybook 3/Deanna_SB3_p3_d1.mp3'
 d "It must have sensed my magic. I'm so sorry!"
 window hide
-stop sound
+stop sound'
+play sound 'audio/stroybook 3/Sounds + Music/The Smeared/Smeared Scream 4.mp3'
 play sound 'audio/storybook 3/Sounds + Music/Lethabo Storybook 3/Lethabo_SB3_p3_d1.mp3'
 l "No matter! We must head for sunlight. They can't stand it!"
 window hide
@@ -28,4 +29,4 @@ n "As they ran, the Smeared monster grates out a horrific, ear-piercing roar tha
 pause 0.5
 stop sound
 pause 0.5
-call stb3_page4
+call stb3_page4 from _call_stb3_page4

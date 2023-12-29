@@ -10,4 +10,4 @@ play sound 'audio/storybook 3/Sounds + Music/Narrator Dialogues/Narrator-SB3_d20
 n "Yet, as she looked back, her stomach twisted up. Athos and Lethabo bravely stood their ground as the Smeared towered over them!"
 stop sound
 pause 2.0
-call stb3_page12
+call stb3_page12 from _call_stb3_page12

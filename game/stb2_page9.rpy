@@ -21,4 +21,4 @@ window hide
 stop sound
 pause 2.0
 
-call stb2_page10
+call stb2_page10 from _call_stb2_page10

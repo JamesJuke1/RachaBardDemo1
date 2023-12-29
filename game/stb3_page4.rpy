@@ -14,4 +14,4 @@ show stb3_page 4_yellow magic
 stop sound
 pause 1.0
 
-call stb3_page5
+call stb3_page5 from _call_stb3_page5

@@ -55,7 +55,7 @@ window hide
 stop sound
 pause 1.5
 
-call stb2_page9
+call stb2_page9 from _call_stb2_page9
 
 
 

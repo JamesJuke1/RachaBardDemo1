@@ -43,4 +43,4 @@ hide lethabo_climb with dissolve
 
 
 #jump to next scene of just Lethabo's claws animation to symbolize athos being cut out of the tree
-call stb2_page6
+call stb2_page6 from _call_stb2_page6

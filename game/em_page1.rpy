@@ -2,6 +2,7 @@
 label exp1_page1:
 
 scene bg exp1_page 1
+stop music 
 n 'This is 1st page of the Explore Mode 1'
 play audio 'audio/Explore 1/Sounds + Music/Music/Explore 1-Background Musicv2.mp3' loop volume 0.75
 n 'Music should be playing in the background'
@@ -28,7 +29,7 @@ label deanna_talk_to_dew_drop:
     n 'Deanna peers into her bloated cockroach figure in the dew drop.'
     play sound 'audio/explore 1/Sounds + Music/Deanna Explore 1/Deanna_EX1_p3_d1.mp3' volume 1.5
     d 'Cockroaches can\'t be heroes'
-    call exp1_page4
+    call exp1_page4 from _call_exp1_page4
 
 label exp1_page4:
 scene bg exp1_page 4

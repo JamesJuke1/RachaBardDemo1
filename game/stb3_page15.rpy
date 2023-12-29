@@ -19,4 +19,4 @@ n_second "Lethabo and Athos dropped their jaws at the sight of her hidden might.
 window hide
 pause 1.0
 stop sound
-call stb3_page16
+call stb3_page16 from _call_stb3_page16

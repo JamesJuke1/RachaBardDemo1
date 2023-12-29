@@ -11,4 +11,4 @@ pause 0.5
 
 #Animation of Lethabo's claws stb2_page 5_slash 1 & stb2_page 5_slash 2
 
-call stb2_page7
+call stb2_page7 from _call_stb2_page7

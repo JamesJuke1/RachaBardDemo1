@@ -13,4 +13,4 @@ stop sound
 hide deanna_flyToFight_page14 with dissolve
 show stb3_page 14_deanna 2
 pause 2.0
-call stb3_page15
+call stb3_page15 from _call_stb3_page15

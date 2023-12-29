@@ -18,4 +18,4 @@ pause 0.5
 show stb2_d_look_3_page6
 pause 1.0
 
-call stb2_page8
+call stb2_page8 from _call_stb2_page8

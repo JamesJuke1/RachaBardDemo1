@@ -15,4 +15,4 @@ stop sound
 scene bg_stb1_page2 with easeinbottom
 pause 1.0
 
-call stb1_page1
+call stb1_page1 from _call_stb1_page1

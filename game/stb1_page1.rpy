@@ -12,4 +12,4 @@ pause 0.5
 stop sound
 pause 0.5
 
-call stb1_page2
+call stb1_page2 from _call_stb1_page2
