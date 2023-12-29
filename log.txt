@@ -1,22 +1,51 @@
-Fri Dec 29 15:14:49 2023
+Fri Dec 29 15:28:14 2023
 Windows-10-10.0.19045
 Ren'Py 8.1.1.23060707
  
 
 Bootstrap to the start of init.init. took 0.03s
 Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.10s
-Loading script. took 1.36s
+Loader init. took 0.06s
+Loading error handling. took 0.03s
+Loading script. took 0.20s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.10s
-Loading analysis data. took 0.00s
-Analyze and compile ATL. took 0.03s
+
+File "game/stb3_page3.rpy", line 21: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+    stop sound'
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 14.59s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.03s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
-Dump and make backups. took 0.07s
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.02s
@@ -28,8 +57,2423 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.11s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 19, in script
+    pause 1.0
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
+    return cache.get(self, render=True)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
+    surf = image.load()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
+    raise e
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/Storybook 2/stb2_page 6_deanna look 3.png'.
+
+While loading <renpy.display.im.Image object ('images/Storybook 2/stb2_page 6_deanna look 3.png') at 0x0000000005c82cd0>:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 19, in script
+    pause 1.0
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'images/Storybook 2/stb2_page 6_deanna look 3.png'.
+Resetting cache.
+Bootstrap to the start of init.init. took 324.19s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 32, in script
+    show stb3_blue_swoop with speedDissolve
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/stroybook 3/Sounds + Music/The Smeared/Smeared Growl.mp3'.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 32, in script
+    show stb3_blue_swoop with speedDissolve
+OSError: Couldn't find file 'audio/stroybook 3/Sounds + Music/The Smeared/Smeared Growl.mp3'.
+Resetting cache.
+Bootstrap to the start of init.init. took 421.58s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 32, in script
+    show stb3_blue_swoop with speedDissolve
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/The Smeared/Smeared Growl.mp3'.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 32, in script
+    show stb3_blue_swoop with speedDissolve
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/The Smeared/Smeared Growl.mp3'.
+Resetting cache.
+Bootstrap to the start of init.init. took 513.28s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 32, in script
+    show stb3_blue_swoop with speedDissolve
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl.mp3'.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 32, in script
+    show stb3_blue_swoop with speedDissolve
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl.mp3'.
+Resetting cache.
+Bootstrap to the start of init.init. took 528.92s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 644.86s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 670.75s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 674.04s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/stb3_page3.rpy", line 30: play requires a channel
+    play
+        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 677.28s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 679.09s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 682.39s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 694.75s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 696.52s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 698.28s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 700.04s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 706.37s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 42, in script call
+    call stb3_page3 from _call_stb3_page3
+  File "game/stb3_page3.rpy", line 31, in script
+    pause 0.5
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl(Long).mp3'.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 42, in script call
+    call stb3_page3 from _call_stb3_page3
+  File "game/stb3_page3.rpy", line 31, in script
+    pause 0.5
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl(Long).mp3'.
+Resetting cache.
+Bootstrap to the start of init.init. took 732.31s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.14s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 749.28s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 751.08s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 766.46s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 769.75s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 771.54s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 773.35s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 817.51s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 829.88s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 854.31s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 859.11s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 860.91s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 42, in script call
+    call stb3_page3 from _call_stb3_page3
+  File "game/stb3_page3.rpy", line 31, in script
+    pause 2.0
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl (Scarred).mp3'.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 42, in script call
+    call stb3_page3 from _call_stb3_page3
+  File "game/stb3_page3.rpy", line 31, in script
+    pause 2.0
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl (Scarred).mp3'.
+Resetting cache.
+Bootstrap to the start of init.init. took 879.29s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.14s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 42, in script call
+    call stb3_page3 from _call_stb3_page3
+  File "game/stb3_page3.rpy", line 31, in script
+    pause 2.0
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl (Scared).mp3'.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call stb1_page0
+  File "game/stb1_page0.rpy", line 18, in script call
+    call stb1_page1 from _call_stb1_page1
+  File "game/stb1_page1.rpy", line 15, in script call
+    call stb1_page2 from _call_stb1_page2
+  File "game/stb1_page2.rpy", line 9, in script call
+    call stb1_page3 from _call_stb1_page3
+  File "game/stb1_page3.rpy", line 42, in script call
+    call stb1_page4 from _call_stb1_page4
+  File "game/stb1_page4.rpy", line 21, in script call
+    call stb1_page5 from _call_stb1_page5
+  File "game/stb1_page5.rpy", line 29, in script call
+    call stb2_page1 from _call_stb2_page1
+  File "game/stb2_page1.rpy", line 17, in script call
+    call stb2_page2 from _call_stb2_page2
+  File "game/stb2_page2.rpy", line 23, in script call
+    call stb2_page3 from _call_stb2_page3
+  File "game/stb2_page3.rpy", line 21, in script call
+    call stb2_page4 from _call_stb2_page4
+  File "game/stb2_page4.rpy", line 35, in script call
+    call stb2_page5 from _call_stb2_page5
+  File "game/stb2_page5.rpy", line 46, in script call
+    call stb2_page6 from _call_stb2_page6
+  File "game/stb2_page6.rpy", line 14, in script call
+    call stb2_page7 from _call_stb2_page7
+  File "game/stb2_page7.rpy", line 21, in script call
+    call stb2_page8 from _call_stb2_page8
+  File "game/stb2_page8.rpy", line 58, in script call
+    call stb2_page9 from _call_stb2_page9
+  File "game/stb2_page9.rpy", line 24, in script call
+    call stb2_page10 from _call_stb2_page10
+  File "game/stb2_page10.rpy", line 66, in script call
+    call stb3_page1 from _call_stb3_page1
+  File "game/stb3_page1.rpy", line 35, in script call
+    call stb3_page2 from _call_stb3_page2
+  File "game/stb3_page2.rpy", line 42, in script call
+    call stb3_page3 from _call_stb3_page3
+  File "game/stb3_page3.rpy", line 31, in script
+    pause 2.0
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl (Scared).mp3'.
+Resetting cache.
+Bootstrap to the start of init.init. took 894.66s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 920.79s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/stb3_page3.rpy", line 31: expected statement.
+    pla
+       ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 924.02s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 927.31s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 942.65s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 962.57s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.01s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 964.33s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.13s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 982.68s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.14s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\james\\AppData\\Roaming/RenPy/backups\\RachaBardDemo':
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6700 XT'
+Version: b'4.6.0 Compatibility Profile Context 23.5.1.230512'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1

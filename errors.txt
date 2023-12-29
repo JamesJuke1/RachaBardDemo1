@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/em_page1.rpy", line 99: expected 'image_name_component' not found.
-    show  "images/Explore 1/images/close up shots/deanna_close_tense.png" at deanna_rock_fish_animation
-          ^
+File "game/stb3_page3.rpy", line 31: expected statement.
+    pla
+       ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Dec 29 15:06:20 2023
+Fri Dec 29 15:43:35 2023
