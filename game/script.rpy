@@ -22,6 +22,6 @@ label start:
 
     # These display lines of dialogue.
 
-#call stb3_page8
+#call stb3_page1
 call exp1_page1
 #call stb1_page0
