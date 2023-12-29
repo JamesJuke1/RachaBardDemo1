@@ -90,9 +90,16 @@ label deanna_exp1_animation:
 
 label rock_fish_animation_left_pond:
     scene bg exp1_page 4
-    #show 'images/Explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
+    #show 'images/explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
     pause 2.0
     call screen exp1_page4_rock_pond_start
+
+label bad_rock_1:
+    scene bg exp1_page 4
+    #show  "images/Explore 1/images/close up shots/deanna_close_tense.png" at deanna_rock_fish_animation
+    pause 0.5
+    show spitting_fish at rock_fish_pos_1
+    call screen exp1_page4_rock_pond_rock1
 
 screen clickable_dew_drop():
     #can add elements as needed with the add command
@@ -167,6 +174,12 @@ screen exp1_page4_rock_pond_start():
             xpos 1600
             ypos 800
             action Jump('exp1_page4') 
+        
+        imagebutton:
+            idle 'images/Explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
+            xpos 1300
+            ypos 950
+            action Jump('bad_rock_1')
 
 screen exp1_page4_rock_pond_rock1():
     window:
