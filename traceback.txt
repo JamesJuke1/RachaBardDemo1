@@ -3,36 +3,30 @@
 While running game code:
   File "game/script.rpy", line 26, in script call
     call exp1_page1
-  File "game/em_page1.rpy", line 44, in script
-    call screen exp1_page5_rock_pond_rock2
-  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-Exception: Screen exp1_page5_rock_pond_rock2 is not known.
-
+  File "game/em_page1.rpy", line 17, in script
+    call screen clickable_dew_drop
+ScriptError: could not find label 'after_clickable_dew_drop'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 670, in main
+    run(restart)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\main.py", line 144, in run
+    renpy.execution.run_context(True)
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\execution.py", line 953, in run_context
+    context.run()
   File "game/script.rpy", line 26, in script call
     call exp1_page1
-  File "game/em_page1.rpy", line 44, in script
-    call screen exp1_page5_rock_pond_rock2
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
-    self.call("execute")
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 3331, in call_screen
-    show_screen(_screen_name, _transient=True, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\screen.py", line 1220, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen exp1_page5_rock_pond_rock2 is not known.
-
+  File "game/em_page1.rpy", line 17, in script
+    call screen clickable_dew_drop
+  File "D:\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'after_clickable_dew_drop'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Fri Dec 15 07:49:14 2023
+Thu Dec 28 17:51:06 2023
