@@ -21,4 +21,4 @@ n_second "Lethabo and Athos shared looks. There is one thing they can do… for 
 
 pause 1.0
 stop sound
-call stb3_page9
+call stb3_page9 from _call_stb3_page9

@@ -35,4 +35,4 @@ play sound 'audio/storybook 3/Sounds + Music/Narrator Dialogues/Narrator-SB3_d26
 n "…a golden lyre!"
 pause 0.5
 stop sound
-call stb3_page14
+call stb3_page14 from _call_stb3_page14

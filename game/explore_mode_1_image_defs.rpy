@@ -66,7 +66,7 @@ transform deanna_right_page2_2:
 
 transform rock_fish_pos_1:
     anchor(0.5, 0.5)
-    pos (1075, 1000)
+    pos (1200, 950)
 
 transform rock_fish_pos_2:
     anchor(0.5, 0.5)

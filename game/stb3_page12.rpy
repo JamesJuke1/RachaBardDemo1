@@ -13,4 +13,4 @@ pause 1.0
 play sound 'audio/storybook 3/Sounds + Music/Narrator Dialogues/Narrator-Sb3_d22_v5.mp3'
 n "They were about to get smushed like bugs!"
 stop sound
-call stb3_page13
+call stb3_page13 from _call_stb3_page13

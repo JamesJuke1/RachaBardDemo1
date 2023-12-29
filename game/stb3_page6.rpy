@@ -13,4 +13,4 @@ window hide
 stop sound
 pause 1.0
 
-call stb3_page7
+call stb3_page7 from _call_stb3_page7

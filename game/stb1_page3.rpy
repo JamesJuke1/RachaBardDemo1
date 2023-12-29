@@ -39,5 +39,5 @@ d "“Lethabo! Athos! Is that you? Oh, Dios Mío”"
 window hide
 pause 0.5
 
-call stb1_page4
+call stb1_page4 from _call_stb1_page4
 

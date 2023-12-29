@@ -25,4 +25,5 @@ play sound 'audio/storybook 1/Music _ Sounds/Narrator Dialogues/Narrator-SB1_d9_
 n "Deanna had no choice but to investigate. Her friends could be in trouble!"
 pause 0.25
 stop sound
-call stb2_page1
+stop music
+call stb2_page1 from _call_stb2_page1

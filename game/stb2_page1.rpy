@@ -14,5 +14,5 @@ stop sound
 pause 0.5
 window hide dissolve
 
-call stb2_page2
+call stb2_page2 from _call_stb2_page2
 

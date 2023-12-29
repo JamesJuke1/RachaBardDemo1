@@ -32,4 +32,4 @@ hide stb3_deanna_kneel_floor with dissolve
 pause 5.2
 scene bg stb3_page 1
 pause 1.0
-call stb3_page2 
+call stb3_page2 from _call_stb3_page2 

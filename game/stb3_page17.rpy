@@ -63,4 +63,4 @@ show deannaActionPop with speedFlash
 pause 1.0
 scene stb3_page 18_gray bg
 show stb3_page 18_gray bg
-call stb3_page18
+call stb3_page18 from _call_stb3_page18

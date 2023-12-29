@@ -13,4 +13,4 @@ n "Jumping in would either mean they fall down into the sky or fall up into the 
 window hide
 stop sound
 pause 1.0
-call stb3_page8
+call stb3_page8 from _call_stb3_page8

@@ -63,7 +63,7 @@ window hide
 stop sound 
 pause 0.5
 
-call stb3_page1
+call stb3_page1 from _call_stb3_page1
 
 
 

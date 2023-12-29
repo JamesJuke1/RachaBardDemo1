@@ -15,8 +15,10 @@ window hide
 stop sound
 pause 0.75
 play sound 'audio/storybook 2/Sounds + Music/Narrator Dialogues/Narrator-SB2_d4_v3.mp3'
+play audio 'audio/storybook 2/Sounds + Music/Sound FX/Story Book 2-Twig Snap.mp3'
 n "But then—{i}Snap!{/i} Deanna stepped on a twig!"
+stop audio
 window hide
 stop sound
-call stb2_page3
+call stb2_page3 from _call_stb2_page3
 

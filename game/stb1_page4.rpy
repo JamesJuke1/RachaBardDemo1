@@ -1,7 +1,8 @@
 #storybook 1 page 4 slide 5
 
 label stb1_page4:
-
+stop music
+play music 'audio/storybook 1/Music _ Sounds/Music/SB1 Music-Scn 4+5 (Loop).mp3'
 scene bg_stb1_page4 with dissolve
 pause 0.25
 play sound 'audio/storybook 1/Music _ Sounds/Narrator Dialogues/Narrator-SB1_d6_v1.mp3'
@@ -17,4 +18,4 @@ stop sound
 pause 3.0
 
 
-call stb1_page5
+call stb1_page5 from _call_stb1_page5

@@ -37,4 +37,4 @@ dSecond "{i}“Yaaaaaaaah!”{/i}"
 window hide
 pause 1.0
 stop sound
-call finish
+call finish from _call_finish

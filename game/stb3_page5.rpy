@@ -20,4 +20,4 @@ n_second "The yellow magic blurred reality in its wake. The trees, the ground, a
 pause 0.25
 stop sound
 pause 0.25
-call stb3_page6
+call stb3_page6 from _call_stb3_page6

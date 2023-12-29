@@ -32,4 +32,4 @@ play sound 'audio/storybook 2/Sounds + Music/Athos Storybook 2/Athos SB2-p7-a.mp
 a "“Ah-hem…”"
 stop sound
 
-call stb2_page5
+call stb2_page5 from _call_stb2_page5

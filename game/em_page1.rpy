@@ -2,6 +2,7 @@
 label exp1_page1:
 
 scene bg exp1_page 1
+stop music 
 n 'This is 1st page of the Explore Mode 1'
 play audio 'audio/Explore 1/Sounds + Music/Music/Explore 1-Background Musicv2.mp3' loop volume 0.75
 n 'Music should be playing in the background'
@@ -28,7 +29,7 @@ label deanna_talk_to_dew_drop:
     n 'Deanna peers into her bloated cockroach figure in the dew drop.'
     play sound 'audio/explore 1/Sounds + Music/Deanna Explore 1/Deanna_EX1_p3_d1.mp3' volume 1.5
     d 'Cockroaches can\'t be heroes'
-    call exp1_page4
+    call exp1_page4 from _call_exp1_page4
 
 label exp1_page4:
 scene bg exp1_page 4
@@ -90,9 +91,16 @@ label deanna_exp1_animation:
 
 label rock_fish_animation_left_pond:
     scene bg exp1_page 4
-    #show 'images/Explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
+    #show 'images/explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
     pause 2.0
     call screen exp1_page4_rock_pond_start
+
+label bad_rock_1:
+    scene bg exp1_page 4
+    #show  "images/Explore 1/images/close up shots/deanna_close_tense.png" at deanna_rock_fish_animation
+    pause 0.5
+    show spitting_fish at rock_fish_pos_1
+    call screen exp1_page4_rock_pond_rock1
 
 screen clickable_dew_drop():
     #can add elements as needed with the add command
@@ -167,6 +175,12 @@ screen exp1_page4_rock_pond_start():
             xpos 1600
             ypos 800
             action Jump('exp1_page4') 
+        
+        imagebutton:
+            idle 'images/Explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
+            xpos 1300
+            ypos 950
+            action Jump('bad_rock_1')
 
 screen exp1_page4_rock_pond_rock1():
     window:

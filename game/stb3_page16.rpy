@@ -19,4 +19,4 @@ n_second "But the Smeared fought back! Despite Deanna’s magic sizzling its bod
 window hide
 pause 1.0
 stop sound
-call stb3_page17
+call stb3_page17 from _call_stb3_page17

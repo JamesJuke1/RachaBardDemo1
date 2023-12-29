@@ -6,4 +6,4 @@ pause 1.0
 scene bg_stb1_page2 with fade
 pause 1.0
 
-call stb1_page3
+call stb1_page3 from _call_stb1_page3

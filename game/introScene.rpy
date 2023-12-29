@@ -30,4 +30,4 @@ show deanna forest blinks at deanna_forestTransform
 
 scene bg deanna_wakeup with zoomin
 
-call deannaAlertWakeup
+call deannaAlertWakeup from _call_deannaAlertWakeup

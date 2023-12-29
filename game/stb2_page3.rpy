@@ -18,4 +18,4 @@ n "A monster! A monster spotted her!"
 window hide
 stop sound
 pause 0.5
-call stb2_page4
+call stb2_page4 from _call_stb2_page4

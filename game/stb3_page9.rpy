@@ -22,4 +22,4 @@ d "What?? I can’t leave you guys!"
 window hide
 pause 1.0
 stop sound
-call stb3_page10
+call stb3_page10 from _call_stb3_page10

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/em_page1.rpy", line 93: expected 'image_name_component' not found.
-    show 'images/Explore 1/images/character animation cycles/animation_rock fish/animation_rock fish 1.png'
-         ^
+File "game/stb3_page3.rpy", line 31: expected statement.
+    pla
+       ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Dec 28 18:14:06 2023
+Fri Dec 29 15:43:35 2023
