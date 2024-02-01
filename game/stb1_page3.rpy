@@ -26,7 +26,7 @@ pause 0.25
 hide deanna_awake
 pause 0.25
 show deanna_calling_out at deanna_worried_left
-d "“Lethabo! Athos! Where are you?”"
+d "Lethabo! Athos! Where are you?"
 window hide
 pause 0.5
 
