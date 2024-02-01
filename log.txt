@@ -1,4 +1,4 @@
-Sat Jan 27 15:03:31 2024
+Tue Jan 30 10:16:34 2024
 macOS-14.2.1-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
@@ -7,13 +7,13 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
-Loading script. took 0.08s
-Loading save slot metadata. took 0.02s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.02s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.01s
+Reloading save slot metadata. took 0.00s
 Index archives took 0.00s
 Dump and make backups. took 0.02s
 Cleaning cache. took 0.00s
