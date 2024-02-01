@@ -1,125 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 27, in script call
-    call stb1_page0
-  File "game/stb1_page0.rpy", line 18, in script call
-    call stb1_page1 from _call_stb1_page1
-  File "game/stb1_page1.rpy", line 15, in script call
-    call stb1_page2 from _call_stb1_page2
-  File "game/stb1_page2.rpy", line 9, in script call
-    call stb1_page3 from _call_stb1_page3
-  File "game/stb1_page3.rpy", line 42, in script call
-    call stb1_page4 from _call_stb1_page4
-  File "game/stb1_page4.rpy", line 21, in script call
-    call stb1_page5 from _call_stb1_page5
-  File "game/stb1_page5.rpy", line 29, in script call
-    call stb2_page1 from _call_stb2_page1
-  File "game/stb2_page1.rpy", line 17, in script call
-    call stb2_page2 from _call_stb2_page2
-  File "game/stb2_page2.rpy", line 23, in script call
-    call stb2_page3 from _call_stb2_page3
-  File "game/stb2_page3.rpy", line 21, in script call
-    call stb2_page4 from _call_stb2_page4
-  File "game/stb2_page4.rpy", line 35, in script call
-    call stb2_page5 from _call_stb2_page5
-  File "game/stb2_page5.rpy", line 46, in script call
-    call stb2_page6 from _call_stb2_page6
-  File "game/stb2_page6.rpy", line 14, in script call
-    call stb2_page7 from _call_stb2_page7
-  File "game/stb2_page7.rpy", line 21, in script call
-    call stb2_page8 from _call_stb2_page8
-  File "game/stb2_page8.rpy", line 58, in script call
-    call stb2_page9 from _call_stb2_page9
-  File "game/stb2_page9.rpy", line 24, in script call
-    call stb2_page10 from _call_stb2_page10
-  File "game/stb2_page10.rpy", line 66, in script call
-    call stb3_page1 from _call_stb3_page1
-  File "game/stb3_page1.rpy", line 35, in script call
-    call stb3_page2 from _call_stb3_page2
-  File "game/stb3_page2.rpy", line 42, in script call
-    call stb3_page3 from _call_stb3_page3
-  File "game/stb3_page3.rpy", line 31, in script
-    pause 2.0
-  File "renpy/common/000statements.rpy", line 459, in execute_pause
-    renpy.pause(delay)
-OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl (Scared).mp3'.
+While loading the script.
+ScriptError: Name ('renpy/common/000atl.rpy', 1649732250, 55) is defined twice, at renpy/common/000atl.rpy:25 and game/Contents/Resources/autorun/renpy/common/000atl.rpyc:25.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 27, in script call
-    call stb1_page0
-  File "game/stb1_page0.rpy", line 18, in script call
-    call stb1_page1 from _call_stb1_page1
-  File "game/stb1_page1.rpy", line 15, in script call
-    call stb1_page2 from _call_stb1_page2
-  File "game/stb1_page2.rpy", line 9, in script call
-    call stb1_page3 from _call_stb1_page3
-  File "game/stb1_page3.rpy", line 42, in script call
-    call stb1_page4 from _call_stb1_page4
-  File "game/stb1_page4.rpy", line 21, in script call
-    call stb1_page5 from _call_stb1_page5
-  File "game/stb1_page5.rpy", line 29, in script call
-    call stb2_page1 from _call_stb2_page1
-  File "game/stb2_page1.rpy", line 17, in script call
-    call stb2_page2 from _call_stb2_page2
-  File "game/stb2_page2.rpy", line 23, in script call
-    call stb2_page3 from _call_stb2_page3
-  File "game/stb2_page3.rpy", line 21, in script call
-    call stb2_page4 from _call_stb2_page4
-  File "game/stb2_page4.rpy", line 35, in script call
-    call stb2_page5 from _call_stb2_page5
-  File "game/stb2_page5.rpy", line 46, in script call
-    call stb2_page6 from _call_stb2_page6
-  File "game/stb2_page6.rpy", line 14, in script call
-    call stb2_page7 from _call_stb2_page7
-  File "game/stb2_page7.rpy", line 21, in script call
-    call stb2_page8 from _call_stb2_page8
-  File "game/stb2_page8.rpy", line 58, in script call
-    call stb2_page9 from _call_stb2_page9
-  File "game/stb2_page9.rpy", line 24, in script call
-    call stb2_page10 from _call_stb2_page10
-  File "game/stb2_page10.rpy", line 66, in script call
-    call stb3_page1 from _call_stb3_page1
-  File "game/stb3_page1.rpy", line 35, in script call
-    call stb3_page2 from _call_stb3_page2
-  File "game/stb3_page2.rpy", line 42, in script call
-    call stb3_page3 from _call_stb3_page3
-  File "game/stb3_page3.rpy", line 31, in script
-    pause 2.0
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
-    self.call("execute")
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 459, in execute_pause
-    renpy.pause(delay)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
-    renpy.audio.audio.periodic()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
-    periodic_pass()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
-    c.periodic()
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "D:\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/storybook 3/Sounds + Music/Sound FX/The Smeared/Smeared Growl (Scared).mp3'.
+  File "/Applications/renpy-8.1.1-sdk/renpy/bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "/Applications/renpy-8.1.1-sdk/renpy/main.py", line 492, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "/Applications/renpy-8.1.1-sdk/renpy/script.py", line 310, in load_script
+    self.load_appropriate_file(".rpyc", [ "_ren.py", ".rpy" ], dir, fn, initcode)
+  File "/Applications/renpy-8.1.1-sdk/renpy/script.py", line 888, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
+  File "/Applications/renpy-8.1.1-sdk/renpy/script.py", line 525, in finish_load
+    check_name(node)
+  File "/Applications/renpy-8.1.1-sdk/renpy/script.py", line 501, in check_name
+    raise ScriptError("Name %s is defined twice, at %s:%d and %s:%d." %
+ScriptError: Name ('renpy/common/000atl.rpy', 1649732250, 55) is defined twice, at renpy/common/000atl.rpy:25 and game/Contents/Resources/autorun/renpy/common/000atl.rpyc:25.
 
-Windows-10-10.0.19045 AMD64
+macOS-14.2.1-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 RachaBardDemo 1.0
-Fri Dec 29 15:42:56 2023
+Tue Jan 30 10:09:02 2024
